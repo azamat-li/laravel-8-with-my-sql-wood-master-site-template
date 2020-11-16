@@ -18,8 +18,10 @@ Released   : 20131025
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/default.css" rel="stylesheet"  />
+<link href="css/fonts.css" rel="stylesheet"  />
+<link href="css/app.css" rel="stylesheet"  />
+
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -27,5 +29,12 @@ Released   : 20131025
 <body>
     @yield('head')
     @yield('content')   
-    @yield('footer')
+    <div id="copyright" class="container">
+        <p>ИП Алибаева  |  Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+            <ul class="contact">
+                <li><a href="#" <span>Вконтакте</span></a></li>
+                <li><a href="#" <span>Одноклассники</span></a></li>
+                <li><a href="#" <span>Facebook</span></a></li>
+            </ul>
+    </div>
 </body>

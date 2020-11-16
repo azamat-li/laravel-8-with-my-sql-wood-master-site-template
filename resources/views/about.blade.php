@@ -10,15 +10,6 @@ Version    : 1.0
 Released   : 20131025
 
 -->
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700" rel="stylesheet" />
-<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
-</head>
 <body>
     @extends ('layout')
     @section('head')
@@ -44,15 +35,5 @@ Released   : 20131025
 </div>
 @endsection
 
-@section('footer')
-<div id="copyright" class="container">
-	<p>ИП Алибаева  |  Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-		<ul class="contact">
-            <li><a href="#" <span>Вконтакте</span></a></li>
-			<li><a href="#" <span>Одноклассники</span></a></li>
-			<li><a href="#" <span>Facebook</span></a></li>
-		</ul>
-</div>
-@endsection
 </body>
 </html>
