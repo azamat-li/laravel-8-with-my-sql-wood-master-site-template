@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Client;
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ClientFactory extends Factory
+class ProductFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Client::class;
+    protected $model = Product::class;
 
     /**
      * Define the model's default state.
@@ -23,8 +23,8 @@ class ClientFactory extends Factory
     {
         return [
             'name' =>$this->faker->name,
-            'about' => $this->faker->text,
-            'slug' => $this->faker->slug
+            'description' =>$this->faker->paragraph,
+            'slug' =>$this->faker->slug
         ];
     }
 }

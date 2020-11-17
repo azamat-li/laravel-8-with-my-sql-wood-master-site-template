@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +19,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/clients', function () {
-    return view('clients');
-});
-
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/clients/{slug}',[ ClientController::class, 'show']);
+
+Route::get('/clients', [ClientController::class, 'index']);
+
+Route::get('/product/{slug}', [ProductController::class, 'show']);
+
+Route::get('/products', [ProductController::class, 'index']);
