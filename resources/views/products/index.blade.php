@@ -30,20 +30,20 @@ Released   : 20131025
     <div id="wrapper">
         <div id="three-column" class="container">
             <p> Здесь Вы можете ознакомиться с выполненными заказами разной сложности. </p>
-        </div>
-        <div id="portfolio" class="container">
+            @foreach($products as $product)
+                <div id="portfolio" class="container"> 
+                    <div class="column1">
+                        <div class="box"> <a href="#"><img src="images/scr01.jpg" alt="" class="image image-full" /></a>
+                            <h3>{{ $product->name}}</h3>
+                                <p>{{$product->description}}</p>
+                                <a href="/products/{{ $product->slug}}" class="button button-small">{{ $product->name }}</a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
         </div>
     </div>
-
-        @foreach($products as $product)
-            <div class="column1">
-                <div class="box"> <a href="#"><img src="images/scr01.jpg" alt="" class="image image-full" /></a>
-                    <h3>{{ $product->name}}</h3>
-                    <p>{{$product->description}}</p>
-                <a href="#" class="button button-small">{{ $product->name }}</a> </div>
-                </div>
-            </div>
-        @endforeach
+    
 
 @endsection
 

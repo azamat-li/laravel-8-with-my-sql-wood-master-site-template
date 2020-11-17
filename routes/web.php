@@ -27,6 +27,6 @@ Route::get('/clients/{slug}',[ ClientController::class, 'show']);
 
 Route::get('/clients', [ClientController::class, 'index']);
 
-Route::get('/product/{slug}', [ProductController::class, 'show']);
+Route::get('/products/{slug}', [ProductController::class, 'show']);
 
 Route::get('/products', [ProductController::class, 'index']);
