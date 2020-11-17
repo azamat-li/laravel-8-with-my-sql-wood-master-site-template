@@ -13,7 +13,7 @@ class ProductController extends Controller
     }
 
     public function index(){
-        $products = DB::table('products')->latest()->take(8)->get();
+        $products = DB::table('products')->latest()->get();
         return view('products.index', ['products' => $products] );
     }
 }

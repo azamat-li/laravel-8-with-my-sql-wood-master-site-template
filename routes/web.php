@@ -23,10 +23,14 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/clients/{slug}',[ ClientController::class, 'show']);
-
-Route::get('/clients', [ClientController::class, 'index']);
-
-Route::get('/products/{slug}', [ProductController::class, 'show']);
 
 Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/{slug}', [ProductController::class, 'show']);
+Route::get('/products/{slug}/edit', [ProductController::class, 'edit']);
+Route::get('/products/{slug}/edit', [ProductController::class, 'update']);
+
+
+Route::get('/clients', [ClientController::class, 'index']);
+Route::post('/clients',[ ClientController::class, 'store']);
+Route::get('/clients/create', [ClientController::class, 'create']);
+Route::get('/clients/{slug}',[ ClientController::class, 'show']);
