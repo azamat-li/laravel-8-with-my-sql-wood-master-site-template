@@ -10,11 +10,11 @@ class ClientController extends Controller
 {
     public function show($slug){
         $client = DB::table('clients')->where('slug', $slug)->first();
-        return view('client', [ 'client' => $client ]) ;
+        return view('clients.show', [ 'client' => $client ]) ;
     }
 
     public function index(){
         $clients  = DB::table('clients')->latest()->take(6)->get();
-        return view('clients', ['clients' => $clients]);
+        return view('clients.index', ['clients' => $clients]);
     }
 }

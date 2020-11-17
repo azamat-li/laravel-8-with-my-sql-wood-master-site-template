@@ -25,10 +25,10 @@ Released   : 20131025
             @foreach($clients as $client)
                 <div id="tbox1">
                     <div class="title">
-                    <h2>{{ $client->name}}</h2>
+                        <h2>{{ $client->name}}</h2>
                     </div>
-                <p>{{$client->about}}</p>
-                    <a href="#" class="button">Learn More</a> 
+                    <p>{{$client->about}}</p>
+                    <a href="/clients/{{$client->slug}}" class="button">О Клиенте  {{ $client->name }} </a> 
                 </div>
                 @endforeach
             </div>

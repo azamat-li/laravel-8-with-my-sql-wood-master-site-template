@@ -44,7 +44,7 @@ Released   : 20131025
     @yield('head')
     @yield('content')   
     <div id="copyright" class="container">
-        <p>ИП Алибаева  |  Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+        <p>ИП Алибаев  |  Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
             <ul class="contact">
                 <li><a href="#" <span>Вконтакте</span></a></li>
                 <li><a href="#" <span>Одноклассники</span></a></li>
