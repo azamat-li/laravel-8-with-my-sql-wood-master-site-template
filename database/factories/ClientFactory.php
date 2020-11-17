@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Model;
+use App\Models\Client;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ClientFactory extends Factory
@@ -12,7 +12,7 @@ class ClientFactory extends Factory
      *
      * @var string
      */
-    protected $model = Model::class;
+    protected $model = Client::class;
 
     /**
      * Define the model's default state.
@@ -22,7 +22,8 @@ class ClientFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' =>$this->faker->name,
+            'about' => $this->faker->text
         ];
     }
 }
