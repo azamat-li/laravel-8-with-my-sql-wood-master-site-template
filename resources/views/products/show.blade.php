@@ -26,12 +26,14 @@ Released   : 20131025
     @extends ('layout')
 
     @section('content')
-    <div id="page-wrapper">Наша Продукция</div>
+    <div id="page-wrapper">
+        <h3>{{ $product->name }} </h3>
+    </div>
     <div id="wrapper">
 	<div id="three-column" class="container"></div>
     <div id="portfolio" class="container">
-        <div class="box"> <a href="#"><img src="{{asset('images/scr01.jpg')}}" alt="" class="image image-full" /></a>
-            <h3>{{ $product->name }} </h3>
+        <div class="box"> 
+            <a href="#"><img src="{{asset('images/scr01.jpg')}}" alt="" class="image image-full" /></a>
             <p>{{ $product->description}}</p>
             <a href="#" class="button button-small">Заказать</a> </div>
         </div>
