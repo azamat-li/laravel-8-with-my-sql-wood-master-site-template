@@ -35,19 +35,18 @@ class ClientController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
-        request()->validate([
+         request()->validate([
             'name' => 'required',
             'about' => 'required',
         ]);
 
-        $client = new Client();
-        $client->name = request('name');
-        $client->about = request('about');
-        $client->slug = request('name');
-
-        $client->save();
+        Client::create([
+                'name' => request('name'),
+                'about' => request('about'),
+                'slug' => request('name')
+        ]);
 
         return redirect('/clients');
     }
@@ -75,14 +74,17 @@ class ClientController extends Controller
 
     public function update(Client $client)
     {
-        request()->validate([
+         request()->validate([
             'name' => 'required',
             'about' => 'required',
         ]);
 
-        $client->name = request('name');
-        $client->about = request('about');
-        $client->save();
+        $client->update([
+                'name' => request('name'),
+                'about' => request('about'),
+                'slug' => request('name')
+        ]);
+
         return redirect('/clients/'.$client->id);
     }
 

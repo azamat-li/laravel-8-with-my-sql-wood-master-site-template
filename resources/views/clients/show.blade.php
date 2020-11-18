@@ -31,6 +31,7 @@ Released   : 20131025
     <div id="portfolio" class="container">
         <p> {{ $client->about}} </p>
     </div>
+    <a href="{{$client->id}}/edit" class="button">Изменить</a>
 </div>
 @endsection
 

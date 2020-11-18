@@ -17,6 +17,11 @@ Released   : 20131025
     @section('content')
     <div id="page-wrapper">Наши Клиенты</div>
     <div id="wrapper">
+        <div id="portfolio" class="container">
+                <div class="tbox1">
+                    <a href="clients/create" class="button">Добавить  Клиента</a>
+                </div>
+        </div>
         <div id="three-column" class="container"></div>
     <div id="portfolio" class="container"></div>
     <div id="wrapper">
@@ -32,7 +37,6 @@ Released   : 20131025
                 </div>
                 @endforeach
             </div>
-            <div id="portfolio" class="container"></div>
         </div>
     </div>
 @endsection
