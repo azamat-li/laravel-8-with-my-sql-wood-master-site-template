@@ -45,14 +45,24 @@ Released   : 20131025
                     <div class="field">
                         <label class="label" for="name">Имя Клиента</label>
                         <div class="control">
-                            <input type="text" class="input" name="name" id="">
+                        <input type="text" class="input @error('name') alert @enderror" name="name" id="name" required
+                        value="{{ old('name') }}">
+
+                        @error('name')
+                            <p class="help is-danger alert">{{ $errors->first('name') }}</p>
+                        @enderror
                         </div>
 
                         <div class="field">
                             <label class="label" for="about">Тёплые слова о клиенте</label>
+
                             <div class="control">
-                                <textarea class="textarea" name="about" id="">
-                                </textarea>
+                            <textarea class="textarea @error('about') is-danger alert @enderror" name="about" id="about"   required>
+                                {{ old('about') }}
+                            </textarea>
+                                @error('about')
+                                    <p class="help is-danger alert" >{{ $errors->first('about') }}</p>
+                                @enderror
                             </div>
                         </div>
                             
