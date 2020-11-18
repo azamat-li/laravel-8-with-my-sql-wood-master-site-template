@@ -58,8 +58,7 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function show($slug){
-        $client = DB::table('clients')->where('slug', $slug)->first();
+    public function show(Client $client){
         return view('clients.show', [ 'client' => $client ]) ;
     }
 
@@ -69,25 +68,22 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function edit($slug)
+    public function edit(Client $client)
     {
-        $client = DB::table('clients')->where('slug', $slug)->first();
         return view('clients.edit', compact('client'));
     }
 
-    public function update($id)
+    public function update(Client $client)
     {
         request()->validate([
             'name' => 'required',
             'about' => 'required',
         ]);
 
-        $client = \App\Models\Client::find($id);
-
         $client->name = request('name');
         $client->about = request('about');
         $client->save();
-        return redirect('/clients/'.$client->slug);
+        return redirect('/clients/'.$client->id);
     }
 
     /**
