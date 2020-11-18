@@ -41,8 +41,10 @@ Released   : 20131025
     <div id="page" class="container">
         <h1 class="heading has-text-weight-bold is-size-4">Обновить Информацию о Клиенте</h1>
         <div class="section">
-            <form method="POST" action="/clients">
+        <form method="POST" action="/clients/{{$client->id}}">
                     @csrf
+                    @method('PUT')
+
                     <div class="field">
                         <label class="label" for="name">Имя Клиента</label>
                         <div class="control">
@@ -59,7 +61,7 @@ Released   : 20131025
                             
                         <div class="field is-grouped">
                             <div class="control">
-                                <button class="button is-text" type="submit">Обновить информацию о клиенте {{ $client->name}} </button>
+                                <button class="button is-text" type="submit">Обновить информацию о клиенте  </button>
                             </div>
                         </div>
                     </div>

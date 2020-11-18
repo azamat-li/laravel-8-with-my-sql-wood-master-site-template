@@ -35,3 +35,4 @@ Route::post('/clients',[ ClientController::class, 'store']);
 Route::get('/clients/create', [ClientController::class, 'create']);
 Route::get('/clients/{slug}',[ ClientController::class, 'show']);
 Route::get('/clients/{slug}/edit', [ClientController::class, 'edit']);
+Route::put('/clients/{slug}', [ClientController::class, 'update']);

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
 
 class ClientController extends Controller
 {
@@ -58,6 +59,7 @@ class ClientController extends Controller
         $client = DB::table('clients')->where('slug', $slug)->first();
         return view('clients.show', [ 'client' => $client ]) ;
     }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -70,16 +72,14 @@ class ClientController extends Controller
         return view('clients.edit', compact('client'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Client  $client
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Client $client)
+    public function update($id)
     {
-        //
+        $client = \App\Models\Client::find($id);
+
+        $client->name = request('name');
+        $client->about = request('about');
+        $client->save();
+        return redirect('/clients/'.$client->slug);
     }
 
     /**
