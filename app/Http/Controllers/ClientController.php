@@ -64,9 +64,10 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function edit(Client $client)
+    public function edit($slug)
     {
-        //
+        $client = DB::table('clients')->where('slug', $slug)->first();
+        return view('clients.edit', compact('client'));
     }
 
     /**
