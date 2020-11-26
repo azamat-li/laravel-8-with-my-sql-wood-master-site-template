@@ -24,7 +24,7 @@ class ClientFactory extends Factory
         return [
             'name' =>$this->faker->name,
             'about' => $this->faker->text,
-            'slug' => $this->faker->slug
+            'slug' => $this->faker->slug,
         ];
     }
 }

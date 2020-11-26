@@ -11,7 +11,8 @@ class Product extends Model
     use HasFactory;
 
     /**
-     * Tags belonging to product
+     * Tags of product
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function tags()
     {

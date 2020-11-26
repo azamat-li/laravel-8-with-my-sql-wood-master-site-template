@@ -21,10 +21,10 @@ class Client extends Model
      * Tags of client
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-//    public function tags()
-//    {
-//        return $this->belongsToMany('App\Models\ClientOnlyTag');
-//    }
+    public function tags()
+    {
+        return $this->belongsToMany('App\Models\Tag');
+    }
 
     public function boughtProducts()
     {

@@ -31,10 +31,19 @@ Released   : 20131025
     <div id="portfolio" class="container">
         <p> {{ $client->about}} </p>
     </div>
+    <div >
+        @foreach ($client->tags as $tag)
+        <a  href="{{ route('clients.index', ['tag' => $tag->name ] ) }}" class="bg-yellow-500 text-gray-100 m-2 p-2 w-1/6 rounded-lg" >
+            {{ $tag->name }}
+        </a>
+        @endforeach
+    </div>
     <a href="{{$client->id}}/edit" class="button">Изменить</a>
 </div>
-@endsection
-<pre class="">
-    {{ $client->tags }}
-</pre>
+    @endsection
 </body>
+<style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+</style>

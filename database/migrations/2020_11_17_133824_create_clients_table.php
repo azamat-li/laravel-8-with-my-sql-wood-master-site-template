@@ -19,8 +19,8 @@ class CreateClientsTable extends Migration
             $table->text('about');
             $table->string('name');
             $table->string('slug');
-
-        });
+        }
+        );
     }
 
     /**

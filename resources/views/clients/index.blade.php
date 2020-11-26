@@ -33,7 +33,7 @@ Released   : 20131025
                         <h2>{{ $client->name}}</h2>
                     </div>
                     <p>{{$client->about}}</p>
-                    <a href="{{ route('clients.show', $client->id) }}" class="button">О Клиенте  {{ $client->name }} </a>
+                    <a href="{{ route('clients.show', $client->id) }}" class="button rounded-lg">О Клиенте  {{ $client->name }} </a>
                 </div>
                 @endforeach
             </div>

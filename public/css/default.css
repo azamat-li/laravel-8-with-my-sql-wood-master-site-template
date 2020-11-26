@@ -1,3 +1,5 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -59,7 +61,7 @@
 
 	.container
 	{
-		margin: 0px auto;
+		margin: 0 auto;
 		width: 1200px;
 	}
 
@@ -580,8 +582,8 @@
 
 	#portfolio
 	{
-        padding-bottom: 4em;
         padding: 8rem;
+        padding-bottom: 4em;
 	}
 
 	#portfolio .box

@@ -21,7 +21,6 @@ Released   : 20131025
     <link href="{{asset('css/fonts.css')}}"
     " rel="stylesheet" />
     <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-200 rounded p-2 ">
@@ -45,8 +44,8 @@ Released   : 20131025
                                 }}</a>
                             </div>
                     @empty
-                        <p>
-                            Пока нет подходящих изделий.
+                        <p class="text-center">
+                           Простите, но подходящих изделий нет.
                         </p>
                     @endforelse
                 </div>
