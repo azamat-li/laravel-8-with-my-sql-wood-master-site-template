@@ -27,33 +27,31 @@ Released   : 20131025
 @extends ('layout')
 
 @section('content')
-<div id="page-wrapper" class="text-gray-600 text-2xl "> Изделия</div>
-<div class=" ">
-    <div class=" pb-96 ">
-        <p class="text-lg  pb-4 p-2 text-center"> Здесь Вы можете ознакомиться с выполненными заказами разной
-            сложности. </p>
-        <div id="portfolio">
-            <div  id="three-column float-left ">
-                <div class=" gallery  ">
-                    @forelse($products as $product)
-                            <div class=" gallery-item rounded-2xl">
-                            <a href="#"><img src="images/scr01.jpg" alt="{{ $product->name }}" class="image image-full rounded gallery-image"/></a>
-                            <h3 class="title">{{ $product->name}}</h3>
-                            <p class="text-gray-500">{{$product->description}}</p>
-                            <a href="{{ route('products.show', $product->id) }}" class="button button-small p-2 m-2 rounded-2xl">{{ $product->name
-                                }}</a>
-                            </div>
-                    @empty
-                        <p class="text-center">
-                           Простите, но подходящих изделий нет.
-                        </p>
-                    @endforelse
-                </div>
+<div id="page-wrapper" class="text-gray-600 text-2xl ">Завершенные проекты</div>
+<div class=" pb-96 ">
+    <p id="page-wrapper" class="text-lg pb-4 p-2 text-center"> Здесь Вы можете ознакомиться с выполненными заказами различной
+        сложности.
+    </p>
+    <div id="wrapper">
+        <div  id="three-column">
+            <div class=" gallery mt-4">
+                @forelse($products as $product)
+                        <div class=" gallery-item rounded-2xl">
+                        <a href="#"><img src="images/scr01.jpg" alt="{{ $product->name }}" class="image image-full rounded gallery-image"/></a>
+                        <h3 class="title">{{ $product->name}}</h3>
+                        <p class="text-gray-500">{{$product->description}}</p>
+                        <a href="{{ route('products.show', $product->id) }}" class="button button-small p-2 m-2 rounded-2xl">{{ $product->name
+                            }}</a>
+                        </div>
+                @empty
+                    <p class="text-center">
+                       Простите, но подходящих изделий нет.
+                    </p>
+                @endforelse
             </div>
         </div>
+    </div>
 </div>
-
-
 @endsection
 
 </body>
