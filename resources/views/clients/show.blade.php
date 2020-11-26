@@ -4,7 +4,7 @@ Design by TEMPLATED
 http://templated.co
 Released for free under the Creative Commons Attribution License
 
-Name       : Brushwood 
+Name       : Brushwood
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20131025
@@ -34,6 +34,9 @@ Released   : 20131025
     <a href="{{$client->id}}/edit" class="button">Изменить</a>
 </div>
 @endsection
-
+<p>
+    @foreach ($client->tags as $tag)
+        <a href="#">{{ $tag->name }}</a>
+    @endforeach
+</p>
 </body>
-</html>

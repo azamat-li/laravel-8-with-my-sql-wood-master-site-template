@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Eloquent\Model;
 
 class ClientController extends Controller
 {
@@ -48,7 +47,7 @@ class ClientController extends Controller
                 'slug' => request('name')
         ]);
 
-        return redirect('/clients');
+        return redirect(route('clients.index'));
     }
 
     /**
@@ -85,7 +84,7 @@ class ClientController extends Controller
                 'slug' => request('name')
         ]);
 
-        return redirect('/clients/'.$client->id);
+        return redirect(route('clients.show', $client->id));
     }
 
     /**

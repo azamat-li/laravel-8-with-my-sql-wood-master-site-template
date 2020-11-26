@@ -5,7 +5,7 @@ Design by TEMPLATED
 http://templated.co
 Released for free under the Creative Commons Attribution License
 
-Name       : Brushwood 
+Name       : Brushwood
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20131025
@@ -20,7 +20,7 @@ Released   : 20131025
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700" rel="stylesheet" />
     <link href="{{asset('css/default.css')}}" rel="stylesheet"  />
-    <link href="{{asset('css/fonts.css')}}"" rel="stylesheet"  />
+    <link href="{{asset('css/fonts.css')}}" rel="stylesheet"  />
     <link href="{{asset('css/app.css')}}" rel="stylesheet"  />
     @yield('head')
 </head>
@@ -44,7 +44,7 @@ Released   : 20131025
         </div>
     </div>
     @yield('head')
-    @yield('content')   
+    @yield('content')
     <div id="copyright" class="container">
         <p>ИП Алибаев  |  Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
             <ul class="contact">
