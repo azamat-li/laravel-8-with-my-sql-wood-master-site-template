@@ -36,15 +36,19 @@ Released   : 20131025
         <div id="portfolio">
             <div  id="three-column float-left ">
                 <div class=" gallery  ">
-                    @foreach($products as $product)
+                    @forelse($products as $product)
                             <div class=" gallery-item rounded-2xl">
                             <a href="#"><img src="images/scr01.jpg" alt="{{ $product->name }}" class="image image-full rounded gallery-image"/></a>
                             <h3 class="title">{{ $product->name}}</h3>
                             <p class="text-gray-500">{{$product->description}}</p>
-                            <a href="/products/{{ $product->slug}}" class="button button-small p-2 m-2 rounded-2xl">{{ $product->name
+                            <a href="{{ route('products.show', $product->id) }}" class="button button-small p-2 m-2 rounded-2xl">{{ $product->name
                                 }}</a>
                             </div>
-                    @endforeach
+                    @empty
+                        <p>
+                            Пока нет подходящих изделий.
+                        </p>
+                    @endforelse
                 </div>
             </div>
         </div>

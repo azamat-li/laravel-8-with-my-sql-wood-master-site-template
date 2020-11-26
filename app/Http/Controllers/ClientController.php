@@ -2,99 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Client;
 //use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Client;
 
 class ClientController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index(){
-        $clients  = DB::table('clients')->latest()->get();
-        return view('clients.index', ['clients' => $clients]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('clients.create');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store()
-    {
-         request()->validate([
-            'name' => 'required',
-            'about' => 'required',
-        ]);
-
-        Client::create([
-                'name' => request('name'),
-                'about' => request('about'),
-                'slug' => request('name')
-        ]);
-
-        return redirect(route('clients.index'));
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Client  $client
-     * @return \Illuminate\Http\Response
-     */
     public function show(Client $client){
+//        $client = DB::table('clients')->where('slug', $slug)->first();
         return view('clients.show', [ 'client' => $client ]) ;
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Client  $client
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Client $client)
-    {
-        return view('clients.edit', compact('client'));
-    }
-
-    public function update(Client $client)
-    {
-         request()->validate([
-            'name' => 'required',
-            'about' => 'required',
-        ]);
-
-        $client->update([
-                'name' => request('name'),
-                'about' => request('about'),
-                'slug' => request('name')
-        ]);
-
-        return redirect(route('clients.show', $client->id));
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Client  $client
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Client $client)
-    {
-        //
+    public function index(){
+        $clients  = DB::table('clients')->latest()->take(6)->get();
+        return view('clients.index', ['clients' => $clients]);
     }
 }

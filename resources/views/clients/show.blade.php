@@ -34,9 +34,7 @@ Released   : 20131025
     <a href="{{$client->id}}/edit" class="button">Изменить</a>
 </div>
 @endsection
-<p>
-    @foreach ($client->tags as $tag)
-        <a href="#">{{ $tag->name }}</a>
-    @endforeach
-</p>
+<pre class="">
+    {{ $client->tags }}
+</pre>
 </body>

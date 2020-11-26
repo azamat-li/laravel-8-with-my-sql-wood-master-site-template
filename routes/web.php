@@ -23,8 +23,8 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/products', [ProductController::class, 'index']);
-Route::get('/products/{product}', [ProductController::class, 'show']);
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
 Route::get('/products/{product}/edit', [ProductController::class, 'edit']);
 Route::get('/products/{product}/edit', [ProductController::class, 'update']);
 
