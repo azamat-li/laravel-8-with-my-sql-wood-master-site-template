@@ -28,10 +28,10 @@ Released   : 20131025
 
     <div id="header-wrapper">
         <div id="header" class="container">
-            <div id="logo">
-                <h1><a href="/">ИП Алибаев</a></h1>
-                <div id="menu">
-                    <ul>
+            <div id="logo" class="pl-2">
+                <h1 class="rounded-full"><a href="/" >ИП Алибаев</a></h1>
+                <div id="menu"  class="pt-2" >
+                    <ul class="rounded-full">
                         <li class="{{Request::path() === '/' ? 'current_page_item' : ''}}"><a href="/" accesskey="1" title="">Домашняя</a></li>
                         <li class="{{Request::path() === 'about' ? 'current_page_item' : ''}}"><a href="/about" class=" current_page_item " accesskey="3" title="">О Нас</a></li>
                         <li class="{{Request::path() === 'clients' ? 'current_page_item' : ''}}"><a href="/clients" class=" current_page_item " accesskey="3" title="">Клиенты</a></li>
