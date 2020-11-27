@@ -37,7 +37,7 @@ Released   : 20131025
                         <li class="{{Request::path() === 'clients' ? 'current_page_item' : ''}}"><a href="/clients" class=" current_page_item " accesskey="3" title="">Клиенты</a></li>
                         <li class="{{Request::path() === 'products' ? 'current_page_item' : ''}}"><a href="/products" class=" current_page_item" accesskey="4" title="">Изделия</a></li>
                         <li class="{{Request::path() === 'applying' ? 'current_page_item' : ''}}"><a href="/careers" class=" current_page_item" accesskey="5" title="">Вакансии</a></li>
-                        <li class="{{Request::path() === 'contacts' ? 'current_page_item' : ''}}"><a href="#" class=" current_page_item" accesskey="6" title="">Контакты</a></li>
+                        <li class="{{Request::path() === 'contacts' ? 'current_page_item' : ''}}"><a href="/contacts" class=" current_page_item" accesskey="6" title="">Контакты</a></li>
                     </ul>
                 </div>
             </div>
