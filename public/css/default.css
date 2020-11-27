@@ -655,7 +655,7 @@
 		line-height: 150px;
 		font-size: 4em;
 		width: 150px;
-		height: 150px;
+		height: 200px;
 		border-radius: 100px;
 		border: 6px solid #67128F;
 		text-align: center;
@@ -710,7 +710,7 @@
 
 .gallery-item {
     /* Minimum width of 24rem and grow to fit available space */
-    flex: 1 0 24rem;
+    flex: 1 0 32rem;
     /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
     margin: 1rem;
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
