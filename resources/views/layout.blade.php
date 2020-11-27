@@ -11,7 +11,7 @@ Version    : 1.0
 Released   : 20131025
 
 -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
@@ -33,7 +33,7 @@ Released   : 20131025
                 <div id="menu"  class="pt-2" >
                     <ul class="rounded-full">
                         <li class="{{Request::path() === '/' ? 'current_page_item' : ''}}"><a href="/" accesskey="1" title="">Домашняя</a></li>
-                        <li class="{{Request::path() === 'about' ? 'current_page_item' : ''}}"><a href="/about" class=" current_page_item " accesskey="3" title="">О Нас</a></li>
+                        <li class="{{Request::path() === 'about' ? 'current_page_item' : ''}}"><a href="/about" class=" current_page_item " accesskey="3" title="">Об ИП</a></li>
                         <li class="{{Request::path() === 'clients' ? 'current_page_item' : ''}}"><a href="/clients" class=" current_page_item " accesskey="3" title="">Клиенты</a></li>
                         <li class="{{Request::path() === 'products' ? 'current_page_item' : ''}}"><a href="/products" class=" current_page_item" accesskey="4" title="">Изделия</a></li>
                         <li class="{{Request::path() === 'applying' ? 'current_page_item' : ''}}"><a href="#" class=" current_page_item" accesskey="5" title="">Вакансии</a></li>

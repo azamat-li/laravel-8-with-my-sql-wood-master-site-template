@@ -21,7 +21,6 @@ Released   : 20131025
     <div id="page-wrapper" class="text-gray-600 text-2xl ">
         С кем мы сотрудничаем
     </div>
-    <div class="pb-96">
     <div id="page-wrapper" class="text-lg pb-4 p-2 text-center">
         Здесь представлены уже воспользовавшиеся услугами
         <strong> Алибаев ИП</strong>
@@ -29,14 +28,18 @@ Released   : 20131025
     </div>
     <div id="wrapper" >
         <div id="three-column" class="ml-8 " >
-            <div class="gallery mt-6">
-            @foreach($clients as $client)
-                <div id="tbox1" class="gallery-item rounded-2xl">
-                    <h2 class="title">{{ $client->name}}</h2>
-                    <p class="text-gray-500">{{$client->about}}</p>
-                    <a href="{{ route('clients.show', $client->id) }}" class="button rounded-lg">О Клиенте  {{ $client->name }} </a>
-                </div>
-                @endforeach
+            <div class="gallery my-6">
+            @forelse($clients as $client)
+            <div id="tbox1" class="gallery-item rounded-2xl">
+                <h2 class="title">{{ $client->name}}</h2>
+                <p class="text-gray-500">{{$client->about}}</p>
+                <a href="{{ route('clients.show', $client->id) }}" class="button rounded-lg">О Клиенте  {{ $client->name }} </a>
+            </div>
+            @empty
+                <p>
+                    Простите, но нет соответствующих клиентов.
+                </p>
+            @endforelse
             </div>
         </div>
     </div>
