@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="237f6b02-e66d-48d2-9e2f-674a6b870f49" name="Default Changelist" comment="feat(color): generating color while creating &#10;&amp; extracting Color model.">
+    <list default="true" id="237f6b02-e66d-48d2-9e2f-674a6b870f49" name="Default Changelist" comment="style(clients): index.blade.php image to not overlap border">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/clients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +213,7 @@
       <workItem from="1606480298069" duration="4294000" />
       <workItem from="1606486744996" duration="8701000" />
       <workItem from="1606498698479" duration="4458000" />
-      <workItem from="1606543121279" duration="7893000" />
+      <workItem from="1606543121279" duration="12128000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
@@ -294,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606549871443</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refactor(style): move default.css into app.scss">
+      <created>1606554286349</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606554286350</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +328,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="style(gallery): added" />
     <MESSAGE value="refactor(client): to use Client $client argument" />
@@ -335,6 +341,11 @@
     <MESSAGE value="feat(contacts): added" />
     <MESSAGE value="style(clients): index.blade.php with color eyebrow" />
     <MESSAGE value="feat(color): generating color while creating &#10;&amp; extracting Color model." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(color): generating color while creating &#10;&amp; extracting Color model." />
+    <MESSAGE value="refactor(style): move default.css into app.scss" />
+    <MESSAGE value="style(clients): index.blade.php image to not overlap border" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(clients): index.blade.php image to not overlap border" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
