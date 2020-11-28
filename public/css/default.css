@@ -106,7 +106,6 @@
 				-moz-transition: all 0.35s ease-in-out;
 				-webkit-transition: all 0.35s ease-in-out;
 				-o-transition: all 0.35s ease-in-out;
-				-ms-transition: all 0.35s ease-in-out;
 				transition: all 0.35s ease-in-out;
 				font-size: 1em;
 				outline: none;
@@ -746,4 +745,14 @@ Remove or comment-out the code block below to see how the browser will fall-back
     .gallery-item {
         margin: 0;
     }
+}
+
+
+/*
+*/
+
+
+.field  {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }

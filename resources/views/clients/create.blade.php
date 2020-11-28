@@ -4,7 +4,7 @@ Design by TEMPLATED
 http://templated.co
 Released for free under the Creative Commons Attribution License
 
-Name       : Brushwood 
+Name       : Brushwood
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20131025
@@ -43,14 +43,16 @@ Released   : 20131025
             <form method="POST" action="/clients">
                     @csrf
                     <div class="field">
-                        <label class="label" for="name">Имя Клиента</label>
-                        <div class="control">
-                        <input type="text" class="input @error('name') alert @enderror" name="name" id="name" required
-                        value="{{ old('name') }}">
+                        <div class="field">
+                            <label class="label" for="name">Имя Клиента</label>
+                            <div class="control">
+                            <input type="text" class="input @error('name') alert @enderror" name="name" id="name" required
+                            value="{{ old('name') }}">
 
-                        @error('name')
-                            <p class="help is-danger alert">{{ $errors->first('name') }}</p>
-                        @enderror
+                            @error('name')
+                                <p class="help is-danger alert">{{ $errors->first('name') }}</p>
+                            @enderror
+                            </div>
                         </div>
 
                         <div class="field">
@@ -65,7 +67,23 @@ Released   : 20131025
                                 @enderror
                             </div>
                         </div>
-                            
+
+                        <div class="field">
+                            <label class="label" for="about">Теги</label>
+                            <div class="control">
+                            <select name="tags[]" >
+                                @foreach ($tags as $tag)
+                                    <option value="{{ $tag->id }}">
+                                        {{  $tag->name  }}
+                                    </option>
+                                @endforeach
+                            </select>
+                            @error('tags')
+                                <p class="help is-danger alert" >{{ $message}}</p>
+                            @enderror
+                            </div>
+                        </div>
+
                         <div class="field is-grouped">
                             <div class="control">
                                 <button class="button is-text" type="submit">Добавить Клиента</button>
@@ -80,4 +98,3 @@ Released   : 20131025
 @endsection
 
 </body>
-</html>
