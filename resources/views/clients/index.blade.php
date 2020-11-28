@@ -30,10 +30,11 @@ Released   : 20131025
         <div id="three-column" class="ml-8 " >
             <div class="gallery my-6">
             @forelse($clients as $client)
-            <div id="tbox1" class="gallery-item rounded-2xl">
-                <h2 class="title">{{ $client->name}}</h2>
+            <div id="tbox1" class="bg-gray-100 gallery-item  rounded-2xl" >
+                <h2  class="inline  p-2 " >{{ $client->name}}</h2>
+                <div id="eyebrow" class="rounded-full p-0.5 mx-1.5 mt-1 mb-2" style="background-color: {{ $client->color}}"></div>
                 <p class="text-gray-500">{{$client->about}}</p>
-                <a href="{{ route('clients.show', $client->id) }}" class="button rounded-lg">О Клиенте  {{ $client->name }} </a>
+                <a href="{{ route('clients.show', $client->id) }}" class="button rounded-2xl">О Клиенте  {{ $client->name }} </a>
             </div>
             @empty
                 <p>
