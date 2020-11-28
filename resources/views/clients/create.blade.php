@@ -59,30 +59,36 @@ Released   : 20131025
                             <label class="label" for="about">Тёплые слова о клиенте</label>
 
                             <div class="control">
-                            <textarea class="textarea @error('about') is-danger alert @enderror" name="about" id="about"   required>
+                            <textarea class="textarea @error('about') is-danger alert @enderror" name="about" id="about"
+                                      required>
                                 {{ old('about') }}
                             </textarea>
                                 @error('about')
-                                    <p class="help is-danger alert" >{{ $errors->first('about') }}</p>
+                                <p class="help is-danger alert">{{ $errors->first('about') }}</p>
                                 @enderror
                             </div>
                         </div>
 
+
                         <div class="field">
-                            <label class="label" for="about">Теги</label>
+                            <label class="label" for="tags">Область работ</label>
                             <div class="control">
-                            <select name="tags[]" >
-                                @foreach ($tags as $tag)
+                                <select multiple name="tags[]" id="tags">
+                                    @foreach ($tags as $tag)
                                     <option value="{{ $tag->id }}">
-                                        {{  $tag->name  }}
+                                        {{ $tag->name }}
                                     </option>
-                                @endforeach
-                            </select>
-                            @error('tags')
-                                <p class="help is-danger alert" >{{ $message}}</p>
-                            @enderror
+                                    @endforeach
+                                </select>
+
+                                @error('about')
+                                <p class="help is-danger alert">{{ $message }}</p>
+                                @enderror
                             </div>
                         </div>
+
+
+                        <div class="field"></div>
 
                         <div class="field is-grouped">
                             <div class="control">
