@@ -28,7 +28,7 @@ Released   : 20131025
 </div>
 <div id="wrapper">
     <div id="three-column">
-        <div class="gallery py-16 ">
+        <div class="gallery py-16 pl-8">
             @forelse($clients as $client)
             <div id="tbox1" class="bg-gray-100 p-2 gallery-item  rounded-2xl">
                 <h2 class="title p-2">{{ $client->name}}</h2>
