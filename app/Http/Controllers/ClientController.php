@@ -2,17 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Tag;
 use App\Models\Client;
+use App\Models\Tag;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
 
 class ClientController extends Controller
 {
 
     /**
      * To display a listing of the resource.
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return Application|Factory|View
      */
-    public function index(){
+    public function index()
+    {
         if (request('Tag')) {
             $clients = Tag::where('name', request('client_only_tag'))->firstOrFail()->products;
         } else {
@@ -23,7 +30,7 @@ class ClientController extends Controller
 
     /**
      * To show the form for creating a new resource.
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return Application|Factory|View
      */
     public function create()
     {
@@ -33,20 +40,21 @@ class ClientController extends Controller
 
     /**
      * To store a newly created resource in storage.
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @return Application|RedirectResponse|Redirector
      */
     public function store()
     {
-         request()->validate([
-            'name' => 'required',
-            'about' => 'required',
+
+        $this->validateClient();
+
+        $client = Client::create([
+            'name' => request('name'),
+            'about' => request('about'),
         ]);
 
-        Client::create([
-                'name' => request('name'),
-                'about' => request('about'),
-                'slug' => request('name')
-        ]);
+        if (request('tags')) {
+            $client->tags()->attach(request('tags'));
+        }
 
         return redirect('/clients');
     }
@@ -54,7 +62,7 @@ class ClientController extends Controller
     /**
      * To display specified resource.
      * @param Client $client
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return Application|Factory|View
      */
     public function show(Client $client){
         return view('clients.show', [ 'client' => $client ]) ;
@@ -63,7 +71,7 @@ class ClientController extends Controller
     /**
      * Show the form for editing the specified resource.
      * @param Client $client
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return Application|Factory|View
      */
     public function edit(Client $client)
     {
@@ -73,14 +81,11 @@ class ClientController extends Controller
     /**
      * To update  specified resource.
      * @param Client $client
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @return Application|RedirectResponse|Redirector
      */
     public function update(Client $client)
     {
-         request()->validate([
-            'name' => 'required',
-            'about' => 'required',
-        ]);
+        $this->validateClient();
 
         $client->update([
                 'name' => request('name'),
@@ -94,11 +99,20 @@ class ClientController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Client  $client
-     * @return \Illuminate\Http\Response
+     * @param Client $client
+     * @return Response
      */
     public function destroy(Client $client)
     {
         //
+    }
+
+    public function validateClient(): void
+    {
+        request()->validate([
+            'name' => 'required',
+            'about' => 'required',
+            'tags' => 'exists:tags,id'
+        ]);
     }
 }

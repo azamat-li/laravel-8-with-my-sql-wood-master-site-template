@@ -2,18 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Client;
 use App\Models\Color;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ClientFactory extends Factory
+class ColorFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Client::class;
+    protected $model = Color::class;
 
     /**
      * Define the model's default state.
@@ -23,11 +22,7 @@ class ClientFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name,
-            'about' => $this->faker->text,
-            'tag_id' => $this->faker->numberBetween(1, 3),
-            'color' => Color::factory()->faker->hexColor,
-            'slug' => $this->faker->slug,
+            'color' => $this->faker->hexColor,
         ];
     }
 }

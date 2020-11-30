@@ -26,8 +26,8 @@ class CreateTagsTable extends Migration
             $table->unsignedBigInteger('tag_id');
             $table->timestamps();
             $table->unique(['product_id', 'tag_id']);
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products');
+            $table->foreign('tag_id')->references('id')->on('tags');
         });
 
         Schema::create('client_tag', function (Blueprint $table) {
@@ -49,5 +49,7 @@ class CreateTagsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('tags');
+        Schema::dropIfExists('product_tag');
+        Schema::dropIfExists('client_tags');
     }
 }

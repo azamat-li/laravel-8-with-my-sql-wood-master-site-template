@@ -26,7 +26,6 @@ Released   : 20131025
 
 <body>
     @extends ('layout')
-
     @section('content')
     <div id="page-wrapper"></div>
     <div id="wrapper">
@@ -35,54 +34,58 @@ Released   : 20131025
     </div>
 </div>
 
-
 <div id="wrapper">
     <div id="page" class="container">
         <h1 class="heading has-text-weight-bold is-size-4">Новый Клиент</h1>
         <div class="section">
             <form method="POST" action="/clients">
-                    @csrf
+                @csrf
+                <div class="field">
                     <div class="field">
-                        <div class="field">
-                            <label class="label" for="name">Имя Клиента</label>
-                            <div class="control">
-                            <input type="text" class="input @error('name') alert @enderror" name="name" id="name" required
-                            value="{{ old('name') }}">
+                        <label class="label" for="name">Имя Клиента</label>
+                        <div class="control">
+                            <input type="text" class="input @error('name') alert @enderror" name="name" id="name"
+                                   required
+                                   value="{{ old('name') }}">
 
                             @error('name')
-                                <p class="help is-danger alert">{{ $errors->first('name') }}</p>
+                            <p class="help is-danger alert">{{ $errors->first('name') }}</p>
                             @enderror
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="field">
-                            <label class="label" for="about">Тёплые слова о клиенте</label>
+                    <div class="field">
+                        <label class="label" for="about">Тёплые слова о клиенте</label>
 
-                            <div class="control">
-                            <textarea class="textarea @error('about') is-danger alert @enderror" name="about" id="about"   required>
-                                {{ old('about') }}
-                            </textarea>
-                                @error('about')
-                                    <p class="help is-danger alert" >{{ $errors->first('about') }}</p>
+                        <div class="control">
+                            <textarea class="textarea @error('about') is-danger alert @enderror" name="about" id="about"
+                                      required> {{old('about')}} </textarea>
+                            @error('about')
+                            <p class="help is-danger alert">{{ $errors->first('about') }}</p>
+                            @enderror
+                        </div>
+                    </div>
+
+
+                    <div class="field">
+                        <label class="label" for="tags">Область работ</label>
+                        <div class="select is-multiple">
+                            <select multiple name="tags[]" id="tags">
+                                @foreach ($tags as $tag)
+                                <option value="{{ $tag->id }}">
+                                    {{ $tag->name }}
+                                </option>
+                                @endforeach
+                            </select>
+
+                            @error('about')
+                            <p class="help is-danger alert">{{ $message }}</p>
                                 @enderror
                             </div>
                         </div>
 
-                        <div class="field">
-                            <label class="label" for="about">Теги</label>
-                            <div class="control">
-                            <select name="tags[]" >
-                                @foreach ($tags as $tag)
-                                    <option value="{{ $tag->id }}">
-                                        {{  $tag->name  }}
-                                    </option>
-                                @endforeach
-                            </select>
-                            @error('tags')
-                                <p class="help is-danger alert" >{{ $message}}</p>
-                            @enderror
-                            </div>
-                        </div>
+
+                        <div class="field"></div>
 
                         <div class="field is-grouped">
                             <div class="control">
