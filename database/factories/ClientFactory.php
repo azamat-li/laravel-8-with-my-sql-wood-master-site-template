@@ -3,7 +3,6 @@
 namespace Database\Factories;
 
 use App\Models\Client;
-use App\Models\Color;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ClientFactory extends Factory
@@ -26,7 +25,7 @@ class ClientFactory extends Factory
             'name' => $this->faker->name,
             'about' => $this->faker->text,
             'tag_id' => $this->faker->numberBetween(1, 3),
-            'color' => Color::factory()->faker->hexColor,
+            'color' => $this->faker->hexColor,
             'slug' => $this->faker->slug,
         ];
     }
