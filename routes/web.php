@@ -1,9 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ClientController;
-use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +21,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about', function () { return view('about'); });
-Route::get('/contacts', function () { return view('contacts'); });
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+
+Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
+Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 
 Route::get('/careers', [CareerController::class, 'index'])->name('careers.index');
 
