@@ -14,10 +14,6 @@ Released   : 20131025
 @extends ('layout')
 
 @section('content')
-<div id="alpha-version" class="text-blue-800 font-semibold text-red-500 bg-blue-300">
-    Alpha Version.
-    <div class="text-sm font-bold ">Страница разрабатывается.</div>
-</div>
 
 <div id="page-wrapper" class="text-gray-600 text-2xl ">Обратная связь</div>
 <div id="page-wrapper" class="text-lg pb-4 p-2 text-center">

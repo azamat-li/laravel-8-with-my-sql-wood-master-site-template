@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Mail;
 class FeedbackController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display sending feedback view.
      *
      * @return Application|Factory|View|Response
      */

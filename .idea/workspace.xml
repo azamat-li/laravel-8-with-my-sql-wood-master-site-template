@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="237f6b02-e66d-48d2-9e2f-674a6b870f49" name="Default Changelist" comment="feat(email): integrated Mailtrap">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdressLabelController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/AdressLabel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/AdressLabelFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_02_063657_create_adress_labels_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/metal-products.blade.php" afterDir="false" />
+    <list default="true" id="237f6b02-e66d-48d2-9e2f-674a6b870f49" name="Default Changelist" comment="feat(tag): amended &amp; tagged by v-1.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,17 +16,17 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupnpm">
       <scroll-view-position x="0" y="0" />
-      <selected-paths>
-        <path>
-          <id value="$PROJECT_DIR$/package.json" />
-          <id value="watch" />
-        </path>
-      </selected-paths>
     </layout>
     <layout place="tools.popupGulp">
       <scroll-view-position x="0" y="0" />
@@ -337,7 +330,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606577777232</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat(email): integrated Mailtrap">
+      <created>1606906560361</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606906560361</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat(tag): amended &amp; tagged by v-1.1">
+      <created>1606906739411</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606906739411</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +392,8 @@
     <MESSAGE value="perf(tags): to create timestamps on the fly" />
     <MESSAGE value="revert(database): to eliminate using faker while creating clients table" />
     <MESSAGE value="feat(email): integrated Mailtrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(email): integrated Mailtrap" />
+    <MESSAGE value="feat(tag): amended &amp; tagged by v-1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(tag): amended &amp; tagged by v-1.1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
