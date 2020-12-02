@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="237f6b02-e66d-48d2-9e2f-674a6b870f49" name="Default Changelist" comment="perf(tags): to create timestamps on the fly">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/613e30aa-21a7-49ea-be15-7bf37bd476fc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/613e30aa-21a7-49ea-be15-7bf37bd476fc/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ClientFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ClientFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_17_133824_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_17_133824_create_clients_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +169,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -227,7 +229,8 @@
       <workItem from="1606746119662" duration="1781000" />
       <workItem from="1606748778507" duration="223000" />
       <workItem from="1606749091035" duration="330000" />
-      <workItem from="1606749999780" duration="1291000" />
+      <workItem from="1606749999780" duration="3999000" />
+      <workItem from="1606802110179" duration="7850000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
@@ -327,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606577777232</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="revert(database): to eliminate using faker while creating clients table">
+      <created>1606751392969</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606751392970</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,5 +388,9 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
