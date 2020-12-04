@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="feat(livewire): integrated &amp; added address-label.blade.php submit page">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MetalProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ip-alibaev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ip-alibaev.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/metal-products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/metalproducts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +246,8 @@
       <workItem from="1606749999780" duration="1291000" />
       <workItem from="1606933718068" duration="1062000" />
       <workItem from="1607060184048" duration="10829000" />
-      <workItem from="1607074639051" duration="2422000" />
+      <workItem from="1607074639051" duration="4825000" />
+      <workItem from="1607084300895" duration="2031000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
@@ -389,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606933928966</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat(livewire): integrated &amp; added address-label.blade.php submit page">
+      <created>1607077221798</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607077221798</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +432,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="style(gallery): added" />
     <MESSAGE value="refactor(client): to use Client $client argument" />
     <MESSAGE value="style(tailwindcss): added to project" />
     <MESSAGE value="perf(content): of products index.blade.php &amp; clients index.blade.php" />
@@ -457,7 +456,8 @@
     <MESSAGE value="oneut(commitlint): added config files" />
     <MESSAGE value="build(commitlint): added config files" />
     <MESSAGE value="feat(livewire): integrated &amp; added address-label.blade.php submit page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(livewire): integrated &amp; added address-label.blade.php submit page" />
+    <MESSAGE value="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

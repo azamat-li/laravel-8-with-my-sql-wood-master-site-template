@@ -1,6 +1,3 @@
-<div>
-
-
     <form
         method="POST"
         action="/feedback" class="shadow-md lg:w-3/5 lg:pl-64 rounded-3xl px-4 py-6 bg-write">
@@ -50,7 +47,7 @@
                 Заказать табличку
             </button>
             <button
-                wire:click="$set('label', '24/6')"
+                wire:click="$set('label', '24/6-A')"
                 type="button"
                 class="inline border border-yellow-600 text-yellow-600 rounded-full px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-yellow-600 focus:outline-none focus:shadow-outline">
                 Сбросить вариант
@@ -64,7 +61,4 @@
 
         </div>
     </form>
-</div>
 
-<style>
-</style>
