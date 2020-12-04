@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FontController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/FontFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_163837_create_fonts_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AdressLabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Font.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/metalproducts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/metalproducts/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +251,8 @@
       <workItem from="1606933718068" duration="1062000" />
       <workItem from="1607060184048" duration="10829000" />
       <workItem from="1607074639051" duration="4825000" />
-      <workItem from="1607084300895" duration="2031000" />
+      <workItem from="1607084300895" duration="4556000" />
+      <workItem from="1607101892101" duration="2924000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
@@ -389,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607077221798</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label">
+      <created>1607091351678</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607091351678</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

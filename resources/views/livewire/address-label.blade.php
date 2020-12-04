@@ -11,19 +11,12 @@
             </div>
             @enderror
         </div>
-        <div class="w-full text-center  font-bold w-full text-lg">
-            {{--                <label for="message" class=" text-center pt-2 text-bold  text-lg ">Хочу сообщить</label>--}}
-            {{--                <textarea class="w-full text-lg px-2  border rounded-2xl" name="message" id="message"></textarea>--}}
-        </div>
 
         <label for="font-family" class="w-full text-bold text-lg pt-2 text-center">Шрифт таблички</label>
-        <select wire:model="font_family" name="font-family" id="font-family">
-            {{--            TODO: refactor to use blade for generating options --}}
-            {{--            @foreach($font_families as $font_family)--}}
-            {{--                <option value="{{$font_family}}"> {{ $font_family }} </option>--}}
-            <option value="Nunito">Nunito</option>
-            <option value="Padauk">Padauk</option>
-            {{--            @endforeach--}}
+        <select wire:model="selected_font_family" name="font-family" id="font-family">
+            @foreach($font_families as $font_family)
+                <option value="{{$font_family->name}}">{{$font_family->name}}</option>
+            @endforeach
         </select>
 
         <label for="label" class="w-full text-bold text-lg pt-2 text-center">Номер дома</label>
@@ -33,9 +26,9 @@
         <input wire:model="curly" id="curly" name="curly" type="checkbox">
 
         <div id="preview" style="@if ($curly) font-style: italic @endif;
-            font-family: {{$font_family}};
+            font-family: {{$selected_font_family}};
             " class="text-center font-bold mt-12 p-4 text-6xl ">
-            {{ $label }}
+            {{ $label }} with font expected to be {{ $selected_font_family }}
         </div>
 
         <button type="submit" name="submit" class="text-center font-bold w-full text-lg"></button>
