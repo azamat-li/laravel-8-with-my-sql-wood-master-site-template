@@ -38,6 +38,7 @@
 
                 </ul>
 
+                {{-- TODO: localize auth ui--}}
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->

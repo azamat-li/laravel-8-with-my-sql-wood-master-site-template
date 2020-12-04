@@ -10,6 +10,12 @@ Version    : 1.0
 Released   : 20131025
 
 -->
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap" rel="stylesheet">
+
+@livewireStyles
 <body>
 @extends ('layout')
 
@@ -26,7 +32,10 @@ Released   : 20131025
     <div id="wrapper">
         <div id="three-column" class="container"></div>
         <div id="portfolio" class="container"></div>
+
+        @livewire('address-label')
     </div>
 @endsection
 
+@livewireScripts
 </body>

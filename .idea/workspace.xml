@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="">
+    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="feat(livewire): integrated &amp; added address-label.blade.php submit page">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MetalProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ip-alibaev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ip-alibaev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/metal-products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/metalproducts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +162,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kelD3fqXQaqaeSLhHwlMRmbOzi" />
@@ -181,6 +196,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/metal-products" />
       <recent name="$PROJECT_DIR$/resources/views/feedback" />
     </key>
   </component>
@@ -208,7 +224,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="237f6b02-e66d-48d2-9e2f-674a6b870f49" name="Default Changelist" comment="" />
+      <changelist id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="" />
       <created>1606068821003</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -236,6 +252,9 @@
       <workItem from="1606748778507" duration="223000" />
       <workItem from="1606749091035" duration="330000" />
       <workItem from="1606749999780" duration="1291000" />
+      <workItem from="1606933718068" duration="1062000" />
+      <workItem from="1607060184048" duration="10829000" />
+      <workItem from="1607074639051" duration="2422000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
@@ -363,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606932629139</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="oneut(commitlint): added config files">
+      <created>1606933928966</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606933928966</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +410,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -414,7 +452,12 @@
     <MESSAGE value="feat(tag): amended &amp; tagged by v-1.1" />
     <MESSAGE value="build(git): merging remote" />
     <MESSAGE value="chore(git): gitignored .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(git): gitignored .idea" />
+    <MESSAGE value="integrated commitlint" />
+    <MESSAGE value="integratedcommitlint" />
+    <MESSAGE value="oneut(commitlint): added config files" />
+    <MESSAGE value="build(commitlint): added config files" />
+    <MESSAGE value="feat(livewire): integrated &amp; added address-label.blade.php submit page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(livewire): integrated &amp; added address-label.blade.php submit page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

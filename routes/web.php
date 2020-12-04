@@ -3,6 +3,7 @@
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\MetalProductController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +32,9 @@ Route::get('/contacts', function () {
 
 Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
+
+Route::get('/metal_products', [MetalProductController::class, 'index'])->name('metal_products.index');
+Route::post('/metal_products', [MetalProductController::class, 'store'])->name('metal_products.store');
 
 Route::get('/careers', [CareerController::class, 'index'])->name('careers.index');
 
