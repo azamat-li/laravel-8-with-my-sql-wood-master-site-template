@@ -53,7 +53,6 @@ Released   : 20131025
                             {{ session('message') }}
                         </p>
                     @endif
-
                 </div>
             </form>
         </div>

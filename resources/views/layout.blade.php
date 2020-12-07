@@ -15,12 +15,15 @@ Released   : 20131025
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta
+        content="ИП Алибаев, столярная мастерская в Учалинском районе,  столярная мастерская в Ахуново, изделия из дерева в Учалинском районе, заказать дверь в Учалах, столяр в Учалах, столяр в Ахуново"
+        name="keywords"/>
+    <meta
+        content="Столярный цех в Учалинском районе по производству изделий преимущественно из дерева, ассортиментных и на заказ."
+        name="description"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
-    <link href="{{asset('css/default.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/fonts.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
     @yield('head')
