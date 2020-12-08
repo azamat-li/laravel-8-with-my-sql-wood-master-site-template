@@ -4,10 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label">
+    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="perf(mail): switched to markdown for emails">
+      <change afterPath="$PROJECT_DIR$/app/Mail/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/Feedback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/email/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mails/feedback.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ip-alibaev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ip-alibaev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MetalProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MetalProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/careers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/careers/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/metalproducts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/metalproducts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,8 +171,13 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kelD3fqXQaqaeSLhHwlMRmbOzi" />
@@ -171,7 +195,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -179,11 +203,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/app/Mail" />
+      <recent name="$PROJECT_DIR$/resources/views/mails" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -251,7 +278,12 @@
       <workItem from="1607193744074" duration="407000" />
       <workItem from="1607325954294" duration="128000" />
       <workItem from="1607326281642" duration="769000" />
-      <workItem from="1607333302651" duration="1618000" />
+      <workItem from="1607333302651" duration="4629000" />
+      <workItem from="1607408849426" duration="10261000" />
+      <workItem from="1607430522404" duration="3592000" />
+      <workItem from="1607434376295" duration="450000" />
+      <workItem from="1607435583314" duration="2732000" />
+      <workItem from="1607439187444" duration="5403000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
@@ -400,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607091351678</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat(ceo): added to layout.blade.php">
+      <created>1607335203394</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607335203394</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,8 +482,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactor(client): to use Client $client argument" />
-    <MESSAGE value="style(tailwindcss): added to project" />
     <MESSAGE value="perf(content): of products index.blade.php &amp; clients index.blade.php" />
     <MESSAGE value="style(clients): images not overlap outer div" />
     <MESSAGE value="perf(about): blade.php to include header section" />
@@ -468,7 +505,9 @@
     <MESSAGE value="build(commitlint): added config files" />
     <MESSAGE value="feat(livewire): integrated &amp; added address-label.blade.php submit page" />
     <MESSAGE value="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label" />
-    <option name="LAST_COMMIT_MESSAGE" value="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label" />
+    <MESSAGE value="feat(ceo): added to layout.blade.php" />
+    <MESSAGE value="perf(mail): switched to markdown for emails" />
+    <option name="LAST_COMMIT_MESSAGE" value="perf(mail): switched to markdown for emails" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

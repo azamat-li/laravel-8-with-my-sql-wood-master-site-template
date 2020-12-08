@@ -2,7 +2,6 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Font;
 use Illuminate\Http\Request;
 use Livewire\Component;
 
@@ -12,7 +11,12 @@ class AddressLabel extends Component
     public $selected_font_family = '';
 
     public $label = '15/2-B';
-    public $curly = false;
+    public $is_bold = false;
+
+    public $message = '';
+
+//    curly addless label font
+//    public $curly = false;
 
     /**
      * Get label from request on mounting.
@@ -20,8 +24,10 @@ class AddressLabel extends Component
      */
     public function mount(Request $request)
     {
+//        Retrieving from database
+//        $this->font_families = Font::all();
         $this->label = $request->input('label', '12/6-A');
-        $this->font_families = Font::all();
+        $this->font_families = ['Padauk', 'Roboto', 'Inconsolanta', 'Open+Sans'];
     }
 
     /**

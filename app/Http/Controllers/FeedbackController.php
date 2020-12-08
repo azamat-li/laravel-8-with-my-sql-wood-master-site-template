@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Feedback;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -34,14 +35,12 @@ class FeedbackController extends Controller
     {
         request()->validate(['email' => 'required|email',
             'message' => 'required']);
-//        $email = request('email');
 
-        $message = request('message');
+//        $message = request('message');
 
-        Mail::raw($message, function ($message) {
-            $message->to('azamatalifullstack@gmail.com')
-                ->subject('Сообщение клиентов ИП Алибаев');
-        });
+        Mail::to(\request('email'))
+            ->send(new Feedback('изделия из дерева'));
+
         return redirect('/feedback')
             ->with('message', 'Благодарим за обратную связь!');
     }

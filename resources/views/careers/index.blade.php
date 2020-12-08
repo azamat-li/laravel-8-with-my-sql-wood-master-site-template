@@ -17,7 +17,6 @@ Released   : 20131025
     <meta name="description" content=""/>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
-    <link href="{{asset('css/default.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/fonts.css')}}"
     " rel="stylesheet" />
     <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
