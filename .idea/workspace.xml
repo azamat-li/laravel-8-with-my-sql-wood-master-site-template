@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="perf(mail): switched to markdown for emails" />
+    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="style(mail): published">
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/ip_alibaev.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -260,7 +266,8 @@
       <workItem from="1607430522404" duration="3592000" />
       <workItem from="1607434376295" duration="450000" />
       <workItem from="1607435583314" duration="2732000" />
-      <workItem from="1607439187444" duration="5756000" />
+      <workItem from="1607439187444" duration="6072000" />
+      <workItem from="1607446876567" duration="2563000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
@@ -423,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607445028887</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="style(mail): published">
+      <created>1607445409521</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1607445409521</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +480,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="perf(content): of products index.blade.php &amp; clients index.blade.php" />
     <MESSAGE value="style(clients): images not overlap outer div" />
     <MESSAGE value="perf(about): blade.php to include header section" />
     <MESSAGE value="feat(careers): added" />
@@ -491,7 +504,8 @@
     <MESSAGE value="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label" />
     <MESSAGE value="feat(ceo): added to layout.blade.php" />
     <MESSAGE value="perf(mail): switched to markdown for emails" />
-    <option name="LAST_COMMIT_MESSAGE" value="perf(mail): switched to markdown for emails" />
+    <MESSAGE value="style(mail): published" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(mail): published" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

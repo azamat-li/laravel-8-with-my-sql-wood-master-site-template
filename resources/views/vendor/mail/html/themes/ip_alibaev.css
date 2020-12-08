@@ -103,11 +103,18 @@ img {
 }
 
 .header a {
-    color: #3d4852;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+    border: none;
+    border-radius: 99px;
+    background: #ff8a0e;
     font-size: 19px;
     font-weight: bold;
     text-decoration: none;
-    text-shadow: 4px 4px 4px white;
+    /*text-shadow: 1px 1px 1px white;*/
 }
 
 
