@@ -20,6 +20,9 @@ Released   : 20131025
     <meta
         content="Столярный цех в Учалинском районе по производству изделий преимущественно из дерева, ассортиментных и на заказ."
         name="description"/>
+    <meta
+        content="ИП Алибаев"
+        name="author"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
