@@ -55,10 +55,6 @@ Released   : 20131025
                                                                                                  accesskey="4"
                                                                                                  title="Из дерева">Из
                             дерева</a></li>
-                    <li class="{{Request::path() === 'metal_products' ? 'current_page_item' : ''}}"><a
-                            href="/metal_products"
-                            class=" current_page_item"
-                            accesskey="5" title="Из металла">Из металла</a></li>
                     <li class="{{Request::path() === 'careers' ? 'current_page_item' : ''}}"><a href="/careers"
                                                                                                 class=" current_page_item"
                                                                                                 accesskey="6"
