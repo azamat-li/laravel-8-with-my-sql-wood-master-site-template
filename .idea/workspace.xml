@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/.vercelignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/index.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +274,7 @@
       <workItem from="1607583448964" duration="457000" />
       <workItem from="1607596216502" duration="911000" />
       <workItem from="1607656308249" duration="9315000" />
-      <workItem from="1607667293290" duration="11293000" />
+      <workItem from="1607667293290" duration="12188000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
