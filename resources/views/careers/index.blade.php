@@ -10,19 +10,24 @@ Version    : 1.0
 Released   : 20131025
 
 -->
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+@section('head')
+    <title>Устроиться на работу в столярном цехе села Ахуново Учалинского района</title>
+    <meta
+        content="вакансия столяра в Учалинском районе, работа столяром в Учалинском районе, работа в селе Ахуново, работа плотником в Учалинском районе, вакансия плотника в Учалинском районе"
+        name="keywords"/>
+    <meta
+        content="Работа в столярном цехе села Ахуново Учалинского района"
+        name="description"/>
+    <meta
+        content="ИП Алибаев"
+        name="author"/>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
     <link href="{{asset('css/fonts.css')}}"
     " rel="stylesheet" />
     <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
-</head>
+@endsection
 
-<body >
 @extends ('layout')
 
 @section('content')
@@ -54,7 +59,6 @@ Released   : 20131025
 </div>
 @endsection
 
-</body>
 
 
 

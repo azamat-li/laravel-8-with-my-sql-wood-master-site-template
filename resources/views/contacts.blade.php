@@ -10,7 +10,20 @@ Version    : 1.0
 Released   : 20131025
 
 -->
-<body>
+
+@section('head')
+<title>Контакты столярного цеха ИП Алибаев</title>
+<meta
+    content="контакты столярного цеха в Учалинском районе, контакты столярного цеха в Учалинском районе, контакты столярного цеха в селе Ахуново, контакты столярного цеха села Ахуново, телефон Ильдара Ильгамовича Алибаева, Ильдар Ильгамович Алибаев"
+    name="keywords"/>
+<meta
+    content="Контакты столярного цеха ИП Алибаев села Ахуново Учалинского района"
+    name="description"/>
+<meta
+    content="ИП Алибаев"
+    name="author"/>
+@endsection
+
 @extends ('layout')
 
 @section('content')
@@ -19,11 +32,11 @@ Released   : 20131025
 </div>
 <div id="page-wrapper" class="text-lg pb-4 p-2 text-center">
     Для связи с
-<strong> ИП Алибаев</strong> вы можете воспользоваться удобным для вас способом связи из указанных ниже.
+    <strong> ИП Алибаев</strong> вы можете воспользоваться удобным для вас способом связи из указанных ниже.
 </div>
 <div id="wrapper">
-	<div id="three-column" class="container"></div>
-	<div id="portfolio" class="container">
+    <div id="three-column" class="container"></div>
+    <div id="portfolio" class="container">
         <!-- This example requires Tailwind CSS v2.0+ -->
         <div class="bg-white  shadow overflow-hidden sm:rounded-lg ">
             <div class="px-4 py-5 sm:px-6">
@@ -68,5 +81,3 @@ Released   : 20131025
 </div>
 </div>
 @endsection
-
-</body>

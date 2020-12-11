@@ -10,19 +10,10 @@ Version    : 1.0
 Released   : 20131025
 
 -->
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 <head>
+    @yield('head')
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <meta
-        content="ИП Алибаев, столярная мастерская в Учалинском районе,  столярная мастерская в Ахуново, изделия из дерева в Учалинском районе, заказать дверь в Учалах, столяр в Учалах, столяр в Ахуново"
-        name="keywords"/>
-    <meta
-        content="Столярный цех в Учалинском районе по производству изделий преимущественно из дерева, ассортиментных и на заказ."
-        name="description"/>
-    <meta
-        content="ИП Алибаев"
-        name="author"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
@@ -39,10 +30,9 @@ Released   : 20131025
             $('#loading').hide()
         });
     </script>
-    @yield('head')
 </head>
-<body>
 
+<body>
 <div id="header-wrapper">
     <div id="header" class="mt-2 ml-4">
         <div id="logo">
@@ -89,7 +79,6 @@ Released   : 20131025
         </div>
     </div>
 </div>
-@yield('head')
 @yield('content')
 <div id="copyright" class="container">
     <p>ИП Алибаев | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
@@ -99,4 +88,4 @@ Released   : 20131025
     </ul>
 </div>
 </body>
-<div id="loading" class="text-xl text-black"> Loading...</div>
+<div id="loading" class="text-xl bg-gray-400 rounded-full text-gray-900"></div>

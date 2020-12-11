@@ -10,11 +10,23 @@ Version    : 1.0
 Released   : 20131025
 
 -->
-<body>
+
+@section('head')
+    <title>Система обратной связи столярного цеха села Ахуново Учалинского района</title>
+    <meta
+        content="feedback, обратная связь столярного цеха в Учалинском районе, сообщить столярному цеху в Учалинском районе, связь со столярным цехом в селе Ахуново, отправить сообщение в столярной цех села Ахуново"
+        name="keywords"/>
+    <meta
+        content="Обратная связь столярного цеха села Ахуново Учалинского района"
+        name="description"/>
+    <meta
+        content="ИП Алибаев"
+        name="author"/>
+@endsection
+
 @extends ('layout')
 
 @section('content')
-
     <div id="page-wrapper" class="text-gray-600 text-2xl ">Обратная связь</div>
     <div id="page-wrapper" class="text-lg pb-4 p-2 text-center">
         Здесь можно заказать изделие или сообщить релевантую столярному цеху
@@ -58,7 +70,6 @@ Released   : 20131025
         </div>
     </div>
 @endsection
-</body>
 
 <style>
     label {
