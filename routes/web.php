@@ -41,8 +41,9 @@ Route::get('/products/{product}/edit', [ProductController::class, 'update']);
 
 
 Route::get('/clients', [ClientController::class, 'index'])->name('clients.index');
-Route::post('/clients',[ ClientController::class, 'store']);
+Route::post('/clients', [ClientController::class, 'store']);
 Route::get('/clients/create', [ClientController::class, 'create']);
-Route::get('/clients/{client}',[ ClientController::class, 'show'])->name('clients.show');
+Route::delete('/clients/{client}', [ClientController::class, 'destroy'])->name('client.destroy');
+Route::get('/clients/{client}', [ClientController::class, 'show'])->name('clients.show');
 Route::get('/clients/{client}/edit', [ClientController::class, 'edit']);
 Route::put('/clients/{client}', [ClientController::class, 'update']);

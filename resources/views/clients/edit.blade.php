@@ -72,6 +72,22 @@ Released   : 20131025
                         <div class="control">
                             <button class="button is-text" type="submit">Обновить информацию о клиенте</button>
                         </div>
+                        <div class="control">
+                            <!--                            <button class="button  is-text" ></button>-->
+                            <!-- delete the shark (uses the destroy method DESTROY /sharks/{id} -->
+                            <!-- we will add this later since its a little more complicated than the other two buttons -->
+                            {{ Form::open(array('url' => 'clients/' . $value->id, 'class' => 'pull-right')) }}
+                            {{ Form::hidden('_method', 'DELETE') }}
+                            {{ Form::submit('Delete this client', array('class' => 'border border-red-500 text-red-500
+                            hover:bg-red-500 hover:text-gray-200 rounded px-4 py-2')) }}
+                            {{ Form::close() }}
+
+                            <button type="button" type="submit"
+                                    class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-gray-200 rounded px-4 py-2">
+                                Обновить информацию о клиенте
+                            </button>
+                            <!--                            <button type="button" class="border border-red-500 text-red-500 hover:bg-red-500 hover:text-gray-200 rounded px-4 py-2">Danger</button>-->
+                        </div>
                     </div>
                 </div>
             </form>

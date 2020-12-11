@@ -4,18 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\Client;
 use App\Models\Tag;
+use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Response;
 use Illuminate\Routing\Redirector;
+
 
 class ClientController extends Controller
 {
 
     /**
-     * To display a listing of the resource.
+     * To display a listing of the clients.
      * @return Application|Factory|View
      */
     public function index()
@@ -29,7 +30,7 @@ class ClientController extends Controller
     }
 
     /**
-     * To show the form for creating a new resource.
+     * To show the form for creating a new client.
      * @return Application|Factory|View
      */
     public function create()
@@ -39,7 +40,7 @@ class ClientController extends Controller
 
 
     /**
-     * To store a newly created resource in storage.
+     * To store newly created client.
      * @return Application|RedirectResponse|Redirector
      */
     public function store()
@@ -60,7 +61,7 @@ class ClientController extends Controller
     }
 
     /**
-     * To display specified resource.
+     * To display specified client.
      * @param Client $client
      * @return Application|Factory|View
      */
@@ -69,7 +70,7 @@ class ClientController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified client.
      * @param Client $client
      * @return Application|Factory|View
      */
@@ -79,7 +80,7 @@ class ClientController extends Controller
     }
 
     /**
-     * To update  specified resource.
+     * To update specified client.
      * @param Client $client
      * @return Application|RedirectResponse|Redirector
      */
@@ -97,16 +98,22 @@ class ClientController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
+     * Remove the specified client from storage.
      * @param Client $client
-     * @return Response
+     * @return Application|RedirectResponse|Redirector
+     * @throws Exception
      */
     public function destroy(Client $client)
     {
-        //
+        $client->delete();
+
+        return redirect('/clients');
     }
 
+    /**
+     *
+     * Validating form data provided by view.
+     */
     public function validateClient(): void
     {
         request()->validate([
