@@ -6,18 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="feat(destroy-client): added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_17_133824_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_17_133824_create_clients_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/careers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/careers/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clients/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/clients/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/clients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clients/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contacts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contacts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +273,7 @@
       <workItem from="1607583448964" duration="457000" />
       <workItem from="1607596216502" duration="911000" />
       <workItem from="1607656308249" duration="9315000" />
-      <workItem from="1607667293290" duration="7638000" />
+      <workItem from="1607667293290" duration="10932000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
@@ -474,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607669651535</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat(destroy-client): added">
+      <created>1607675242888</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1607675242888</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

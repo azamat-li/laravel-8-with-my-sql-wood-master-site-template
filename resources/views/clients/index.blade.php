@@ -13,8 +13,8 @@
 @extends ('layout')
 
 @section('content')
-<div class="bg-gray-100 pl-10 ">
-    <a href="clients/create" class="button rounded-2xl hover:bg-green-400">Добавить Клиента</a>
+<div class="bg-gray-100 pt-20 pl-12  ">
+    <a href="clients/create" class=" border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-gray-200 rounded px-4 py-2 ">Добавить Клиента</a>
 </div>
 <div id="page-wrapper" class="text-gray-600 text-2xl ">
     С кем мы сотрудничаем
