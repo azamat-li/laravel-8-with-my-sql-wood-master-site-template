@@ -2,10 +2,10 @@
 
 ## Features
 
-- Auth (coming soon)
+- Auth (coming soon, if the God withes)
 - Mail feedback
 - MySql integration
-- Address label number generating ( coming soon)
+- Address label number generating ( coming soon, if the God withes)
 
 
 ## Learning Laravel
