@@ -24,6 +24,7 @@
     "dependencies": {
         "@tailwindcss/custom-forms": "^0.2.1",
         "autoprefixer": "^10.0.2",
+        "jquery": "^3.5.1",
         "laravel-mix-tailwind": "^0.1.1",
         "postcss": "^8.1.10",
         "tailwindcss": "^2.0.1"

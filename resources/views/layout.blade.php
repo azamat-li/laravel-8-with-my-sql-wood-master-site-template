@@ -28,6 +28,17 @@ Released   : 20131025
           rel="stylesheet"/>
     <link href="{{asset('css/fonts.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
+
+
+    <!--  jquery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Before page is completely loaded script -->
+    <script>
+        $(document).ready(function () {
+            $('#loading').hide()
+        });
+    </script>
     @yield('head')
 </head>
 <body>
@@ -88,3 +99,4 @@ Released   : 20131025
     </ul>
 </div>
 </body>
+<div id="loading" class="text-xl text-black"> Loading...</div>
