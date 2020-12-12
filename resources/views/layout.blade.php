@@ -18,7 +18,8 @@ Released   : 20131025
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
     <link href="{{asset('css/fonts.css')}}" rel="stylesheet"/>
-    <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
+    <link href="{{asset('css/vanilla.css')}}" rel="stylesheet"/>
+    <link href="{{asset('css/tailwind.css')}}" rel="stylesheet"/>
 
 
     <!--  jquery from CDN -->
@@ -42,7 +43,7 @@ Released   : 20131025
     <div id="header" class="pl-6 font-bold">
         <div id="logo">
             <div class=" bg-gray-800 flex rounded-full lg:w-1/4 md:w-1/2 sm:w-3/5 ">
-                <h1 id="company" class="rounded-full  "><a href="/" >ИП Алибаев</a></h1>
+                <h1 id="company-title" class="rounded-full  "><a href="/" >ИП Алибаев</a></h1>
             </div>
             <div id="menu" class=" pt-2 pb-1">
                 <ul class="rounded-full">

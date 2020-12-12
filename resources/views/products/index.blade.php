@@ -34,9 +34,11 @@
                                  class="image rounded-2xl image-full rounded gallery-image"/></a>
                 <h3 class="title">{{ $product->name}}</h3>
                 <p class="text-gray-500">{{$product->description}}</p>
-                <a href="{{ route('products.show', $product->id) }}" class="button button-small p-2 m-2 rounded-2xl">{{
-                    $product->name
+                <div class="pt-12 pb-5">
+                    <a href="{{ route('products.show', $product->id) }}" class="button ">{{
+                        $product->name
                     }}</a>
+                </div>
             </div>
             @empty
             <p class="text-center">

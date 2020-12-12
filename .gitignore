@@ -13,3 +13,5 @@ yarn-error.log
 /.idea/workspace.xml
 /.idea
 /.idea/*
+/public/css/tailwind.css
+/public/css/vanilla.css

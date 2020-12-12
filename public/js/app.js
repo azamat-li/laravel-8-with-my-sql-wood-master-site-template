@@ -19366,26 +19366,38 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
+/***/ "./resources/sass/tailwind.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/tailwind.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/src/index.js):\nSyntaxError\n\n(303:25) The `hover:bg-orange` class does not exist, but `hover:bg-black` does. If you're sure that `hover:bg-orange` exists, make sure that any `@import` statements are being properly processed before Tailwind CSS sees your CSS, as `@apply` can only be used for classes in the same CSS tree.\n\n \u001b[90m 301 | \u001b[39m  margin-top\u001b[33m:\u001b[39m 2em\u001b[33m;\u001b[39m\n \u001b[90m 302 | \u001b[39m  padding\u001b[33m:\u001b[39m 1em 2em 1em 2em\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 303 | \u001b[39m  \u001b[36m@apply\u001b[39m bg-transparent hover\u001b[33m:\u001b[39mbg-orange text-orange-dark font-semibold hover\u001b[33m:\u001b[39mtext-white py-2 px-4 border border-orange hover\u001b[33m:\u001b[39mborder-transparent rounded-full mr-2\u001b[33m;\u001b[39m\n \u001b[90m     | \u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 304 | \u001b[39m  line-height\u001b[33m:\u001b[39m 1.8em\u001b[33m;\u001b[39m\n \u001b[90m 305 | \u001b[39m  text-decoration\u001b[33m:\u001b[39m none\u001b[33m;\u001b[39m\n\n    at /home/ali/Laravels/ip-alibaev/node_modules/webpack/lib/NormalModule.js:316:20\n    at /home/ali/Laravels/ip-alibaev/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /home/ali/Laravels/ip-alibaev/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at context.callback (/home/ali/Laravels/ip-alibaev/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at /home/ali/Laravels/ip-alibaev/node_modules/postcss-loader/src/index.js:207:9");
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/vanilla.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/vanilla.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/vanilla.scss ./resources/sass/tailwind.scss ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/ali/Laravels/ip-alibaev/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/ali/Laravels/ip-alibaev/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/ali/Laravels/ip-alibaev/resources/sass/vanilla.scss */"./resources/sass/vanilla.scss");
+module.exports = __webpack_require__(/*! /home/ali/Laravels/ip-alibaev/resources/sass/tailwind.scss */"./resources/sass/tailwind.scss");
 
 
 /***/ })

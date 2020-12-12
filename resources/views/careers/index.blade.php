@@ -26,16 +26,18 @@
 </p>
 <div id="wrapper">
     <div  id="three-column">
-        <div class=" gallery my-6">
+        <div class=" gallery my-6 py-2 px-4">
         @forelse($careers as $career)
         <div  class=" gallery-item  px-2 rounded-2xl">
             <h3 class="title">{{ $career->name}}</h3>
             <p class="text-gray-500">{{$career->description}}</p>
-            <a href="{{ route('products.show', $career->id) }}" class="button button-small mb-2 rounded-2xl">{{ $career->name
-                }}</a>
+            <div class="pt-12 pb-5">
+                <a href="{{ route('products.show', $career->id) }}" class="button">{{ $career->name
+                    }}</a>
+            </div>
             <div class="text-left my-2 mx-4">
                 <div class="right-2 px-6 inline ">Область работ</div>
-                <div class="text-lg text-gray-50 bg-yellow-800 w-1/4 rounded-full  inline px-4 font-bold">{{ $career->field }}</div>
+                <div class="text-lg  w-1/4 inline px-4 font-bold tag">{{ $career->field }}</div>
             </div>
         </div>
         @empty

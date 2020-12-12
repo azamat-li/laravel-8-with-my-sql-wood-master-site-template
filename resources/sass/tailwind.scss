@@ -1,0 +1,88 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+$primary: tomato;
+
+$bg-gradient: linear-gradient(124deg, #00C4FF, #9D1BB2);
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*********************************************************************************/
+/* Tag Style                                                                  */
+/*********************************************************************************/
+
+.tag
+{
+    @apply bg-transparent  text-green-600 font-semibold   border border-green-600 text-sm  p-1 rounded-full;
+}
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+.button
+{
+    @apply bg-transparent  text-blue-800 font-semibold   border border-blue-800 p-2 rounded-full;
+}
+
+.button:hover{
+    @apply border-transparent bg-blue-400 text-blue-50;
+}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#menu
+{
+}
+
+#menu ul
+{
+    display: inline-block;
+    padding: 0 2em;
+    background: #2d3748;
+    text-align: center;
+}
+
+#menu li
+{
+    display: inline-block;
+}
+
+#menu li a, #menu li span
+{
+    display: inline-block;
+    padding: 1.3em 1.5em;
+    text-decoration: none;
+    font-size: 0.90em;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: 0;
+    color: #FFF;
+}
+
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+}
+
+// Only when navigator on that page
+#menu .current_page_item a
+{
+    background: linear-gradient(124deg, #00C4FF, #9D1BB2);
+    @apply  px-1;
+}
+
+#menu .current_page_item_left a{
+    @apply rounded-l-full;
+}
+
+#menu .current_page_item_right a{
+    @apply rounded-r-full;
+}
+
+
