@@ -33,7 +33,7 @@
                 <div id="eyebrow" class="rounded-full p-0.5 mx-1.5 mt-1 mb-2"
                      style="background-color: {{ $client->color}}"></div>
                 <p class="text-gray-500">{{$client->about}}</p>
-                <a href="{{ route('clients.show', $client->id) }}" class="button rounded-2xl">О Клиенте {{
+                <a href="{{ route('clients.show', $client->id) }}" class="rounded-2xl flex flex-wrap  bg-transparent hover:bg-red-400 text-red-400 font-semibold hover:text-gray-50 py-2 px-4 border border-red-400 hover:border-transparent  mr-2">О Клиенте {{
                     $client->name }} </a>
             </div>
 

@@ -4,6 +4,8 @@
 
 $primary: tomato;
 
+$bg-gradient: linear-gradient(124deg, #00C4FF, #9D1BB2);
+
 
 @tailwind base;
 @tailwind components;
@@ -115,7 +117,7 @@ a:hover
         letter-spacing: 1.6px;
 
         /* Create the gradient. */
-        background: linear-gradient(124deg, #00C4FF, #9D1BB2);
+        background: $bg-gradient;
 
         /* Set the background size and repeat properties. */
         background-size: 100%;
@@ -384,7 +386,6 @@ ul.contact li a:before
     display: inline-block;
     margin-top: 2em;
     padding: 1em 2em 1em 2em;
-    background: #ff8a0e;
     line-height: 1.8em;
     text-decoration: none;
     text-transform: uppercase;
@@ -439,7 +440,7 @@ ul.contact li a:before
 #header-wrapper {
     overflow: hidden;
     padding: 1rem 0 1.6rem 0;
-    background: linear-gradient(124deg, #00C4FF, #9D1BB2);
+    background: $bg-gradient;
 }
 
 #company {
@@ -499,7 +500,7 @@ ul.contact li a:before
 {
     display: inline-block;
     padding: 0 2em;
-    background: #ff8a0e;
+    background: #2d3748;
     text-align: center;
 }
 
@@ -524,11 +525,20 @@ ul.contact li a:before
 {
 }
 
+// Only when navigator on that page
 #menu .current_page_item a
 {
-    color: #000;
+    background: linear-gradient(124deg, #00C4FF, #9D1BB2);
+    @apply  px-1;
 }
 
+#menu .current_page_item_left a{
+    @apply rounded-l-full;
+}
+
+#menu .current_page_item_right a{
+    @apply rounded-r-full;
+}
 
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -650,22 +660,21 @@ ul.contact li a:before
 }
 
 /*********************************************************************************/
-/* Copyright                                                                     */
+/* Copyright at the bottom                                                       */
 /*********************************************************************************/
 
 #copyright
 {
     overflow: hidden;
-    padding: 5em 0;
-    border-top: 1px solid rgba(255,255,255,0.08);
     text-align: center;
+    background: $bg-gradient;
 }
 
 #copyright p
 {
     text-transform: uppercase;
     font-size: 0.80em;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
 }
 
 #copyright a

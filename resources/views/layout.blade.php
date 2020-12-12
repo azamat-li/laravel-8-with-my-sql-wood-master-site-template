@@ -30,7 +30,10 @@ Released   : 20131025
             $('#loading').hide()
         });
     </script>
-    <style></style>
+    <style>
+
+
+    </style>
 
 </head>
 
@@ -38,12 +41,12 @@ Released   : 20131025
 <div id="header-wrapper">
     <div id="header" class="pl-6 font-bold">
         <div id="logo">
-            <div class="headline bg-gray-800 flex rounded-full lg:w-1/4">
-                <h1 id="company" class="rounded-full  "><a href="/">ИП Алибаев</a></h1>
+            <div class=" bg-gray-800 flex rounded-full lg:w-1/4 md:w-1/2 sm:w-3/5 ">
+                <h1 id="company" class="rounded-full  "><a href="/" >ИП Алибаев</a></h1>
             </div>
-            <div id="menu" class="pt-2 ">
+            <div id="menu" class=" pt-2 pb-1">
                 <ul class="rounded-full">
-                    <li class="{{Request::path() === '/' ? 'current_page_item' : ''}}"><a href="/"
+                    <li class="{{Request::path() === '/' ? 'current_page_item current_page_item_left ' : ''}}"><a href="/"
                                                                                           class="current_page_item"
                                                                                           accesskey="1"
                                                                                           title="Домашняя">Домашняя</a>
@@ -73,8 +76,8 @@ Released   : 20131025
                                                                                                  accesskey="7"
                                                                                                  title="Контакты">Контакты</a>
                     </li>
-                    <li class="{{Request::path() === 'feedback' ? 'current_page_item' : ''}}"><a href="/feedback"
-                                                                                                 class=" current_page_item"
+                    <li class="{{Request::path() === 'feedback' ? 'current_page_item current_page_item_right' : ''}}"><a href="/feedback"
+                                                                                                 class=" current_page_item "
                                                                                                  accesskey="8"
                                                                                                  title="Связаться">Связаться</a>
                     </li>
@@ -84,13 +87,12 @@ Released   : 20131025
         </div>
     </div>
 </div>
+
 @yield('content')
-<div id="copyright" class="container">
-    <p>ИП Алибаев | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-    <ul class="contact">
-        <li><a href="#"><span>Вконтакте</span></a></li>
-        <li><a href="#"><span>Facebook</span></a></li>
-    </ul>
+
+<div  class=" lg:h-72 grid justify-items-center  bg-gray" >
+    <div ></div>
+    <div >ИП Алибаев | Based on design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</div>
 </div>
 </body>
-<div id="loading" class="text-xl bg-gray-400 rounded-full text-gray-900"></div>
+<div id="loading" class="text-lg bg-gray-800 text-gray-200 rounded">Идет подготовка...</div>
