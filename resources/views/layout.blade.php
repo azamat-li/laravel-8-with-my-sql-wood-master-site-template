@@ -30,14 +30,18 @@ Released   : 20131025
             $('#loading').hide()
         });
     </script>
+    <style></style>
+
 </head>
 
 <body>
 <div id="header-wrapper">
-    <div id="header" class="mt-2 ml-4">
+    <div id="header" class="pl-6 font-bold">
         <div id="logo">
-            <h1 class="rounded-full"><a href="/">ИП Алибаев</a></h1>
-            <div id="menu" class="pt-2">
+            <div class="headline bg-gray-800 flex rounded-full lg:w-1/4">
+                <h1 id="company" class="rounded-full  "><a href="/">ИП Алибаев</a></h1>
+            </div>
+            <div id="menu" class="pt-2 ">
                 <ul class="rounded-full">
                     <li class="{{Request::path() === '/' ? 'current_page_item' : ''}}"><a href="/"
                                                                                           class="current_page_item"
@@ -76,6 +80,7 @@ Released   : 20131025
                     </li>
                 </ul>
             </div>
+            @yield('auto-type')
         </div>
     </div>
 </div>

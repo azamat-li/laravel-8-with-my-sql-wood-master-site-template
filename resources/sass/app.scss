@@ -11,6 +11,15 @@ $primary: tomato;
 
 
 /*********************************************************************************/
+/*   Font family                                                                 */
+/*********************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+* {
+    font-family: "Open Sans", sans-serif
+}
+
+/*********************************************************************************/
 /*      Page loading                                                             */
 /*********************************************************************************/
 #loading {
@@ -34,15 +43,12 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    background: #404040;
-    font-family: 'Quicksand', sans-serif;
     font-size: 12pt;
     font-weight: 400;
     color: #000000;
 }
 
-
-h1, h2, h3
+h2, h3
 {
     margin: 0;
     padding: 0;
@@ -80,19 +86,113 @@ a:hover
 }
 
 
-.container
-{
+.container {
     margin: 0 auto;
     width: 1200px;
 }
 
+/*********************************************************************************/
+/* Auto-typing                                                                   */
+// CSS Needed to make it work (Wrote not using SCSS at all copy and paste away)
+// copy and paste into your CSS and the cursor should appear when typing begins
+/*********************************************************************************/
+.text-js {
+    opacity: 0;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+// Text Can be styled just like normal
+.headline {
+    h1 {
+        letter-spacing: 1.6px;
+
+        /* Create the gradient. */
+        background: linear-gradient(124deg, #00C4FF, #9D1BB2);
+
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+}
+
+
+/*********************************************************************************/
+/* Css scroller                                                                  */
+/*********************************************************************************/
+
+$scroller-height: 6px;
+$scroller-color: #c69;
+$scroller-background: #ddd;
+$body-background: white;
+
+html, body {
+    margin: 0;
+}
+
+.scroller {
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: $body-background;
+}
+
+main {
+    margin-top: 0;
+}
+
+body {
+    background: linear-gradient(to right top,
+        $scroller-color 50%,
+        $scroller-background 50%);
+    //6px = height of scroller but calc won't work with variables
+    background-size: 100% calc(100% - 100vh + #{-$scroller-height});
+    background-repeat: no-repeat;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    top: $scroller-height;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background: $body-background;
+}
+
+// additional styling
+main {
+    font-family: monospace;
+    max-width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+
+    h1 {
+        color: #c69
+    }
+
+    div {
+        margin-bottom: 1em;
+    }
+}
 
 /*********************************************************************************/
 /* Form Style                                                                    */
 /*********************************************************************************/
 
-form
-{
+form {
 }
 
 form label
@@ -336,16 +436,17 @@ ul.contact li a:before
 /* Header                                                                        */
 /*********************************************************************************/
 
-#header-wrapper
-{
+#header-wrapper {
     overflow: hidden;
-    padding: 10em 0 10em 0;
-    background: url(../images/bg01.jpg) repeat-x center top;
-    border-bottom: 20px solid rgba(0,0,0,.5);
+    padding: 1rem 0 1.6rem 0;
+    background: linear-gradient(124deg, #00C4FF, #9D1BB2);
 }
 
-#header
-{
+#company {
+
+}
+
+#header {
 }
 
 /*********************************************************************************/
@@ -356,23 +457,23 @@ ul.contact li a:before
 {
 }
 
-#logo h1
-{
+#logo h1 {
     display: inline-block;
     margin-bottom: 0.20em;
     padding: 0.20em 0.9em;
-    background: #000;
     font-size: 3.5em;
 }
 
-#logo a
-{
+#logo #company-title {
+    color: #000;
+}
+
+#logo a {
     text-decoration: none;
     color: #FFF;
 }
 
-#logo span
-{
+#logo span {
     display: block;
     text-transform: uppercase;
     font-size: 0.90em;
