@@ -115,8 +115,6 @@ a:hover
         background-repeat: repeat;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
     }
 }
 
@@ -567,22 +565,17 @@ ul.contact li a:before
 
 #copyright
 {
-    overflow: hidden;
-    text-align: center;
     background: $bg-gradient;
 }
 
 #copyright p
 {
     text-transform: uppercase;
-    font-size: 0.80em;
-    color: rgba(255,255,255,0.4);
 }
 
 #copyright a
 {
     text-decoration: none;
-    color: rgba(255,255,255,0.6);
 }
 
 /*********************************************************************************/

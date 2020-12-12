@@ -31,11 +31,6 @@ Released   : 20131025
             $('#loading').hide()
         });
     </script>
-    <style>
-
-
-    </style>
-
 </head>
 
 <body>
@@ -91,7 +86,7 @@ Released   : 20131025
 
 @yield('content')
 
-<div  class=" lg:h-72 grid justify-items-center  bg-gray" >
+<div  id="copyright" class=" lg:h-72 grid justify-items-center " >
     <div ></div>
     <div >ИП Алибаев | Based on design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</div>
 </div>

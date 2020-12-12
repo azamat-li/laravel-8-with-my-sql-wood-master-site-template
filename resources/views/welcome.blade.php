@@ -11,10 +11,11 @@
 <meta
     content="ИП Алибаев"
     name="author"/>
+
 @endsection
 
 @section('auto-type')
-<script>
+<script type = "text/javascript">
     // DISCLAIMER: This function does require jQuery. I've used it here because the project I'm building this for already uses jQuery, so I thought why not. It can be modified quite simply to be done in raw JavaScript.  Just thought I'd let you know.
     // This is the funtion you need to copy
     // Copy from line 9 to 34
