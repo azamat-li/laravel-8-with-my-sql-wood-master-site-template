@@ -12,6 +12,38 @@ $bg-gradient: linear-gradient(124deg, #00C4FF, #9D1BB2);
     font-family: "Open Sans", sans-serif
 }
 
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#menu
+{
+}
+
+#menu ul
+{
+    padding: 0 2em;
+    background: #2d3748;
+    text-align: center;
+}
+
+
+#menu li a, #menu li span
+{
+    padding: 1.3em 1.5em;
+    text-decoration: none;
+    font-size: 0.90em;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: 0;
+    color: #FFF;
+}
+
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+}
+
 /*********************************************************************************/
 /*      Page loading                                                             */
 /*********************************************************************************/
@@ -89,9 +121,10 @@ a:hover
 // CSS Needed to make it work (Wrote not using SCSS at all copy and paste away)
 // copy and paste into your CSS and the cursor should appear when typing begins
 /*********************************************************************************/
-.text-js {
-    opacity: 0;
-}
+
+//.text-js {
+//    opacity: 0;
+//}
 
 @keyframes flash {
     0% {
@@ -103,9 +136,8 @@ a:hover
 }
 
 // Text Can be styled just like normal
-.headline {
+.bg-gradient {
     h1 {
-        letter-spacing: 1.6px;
 
         /* Create the gradient. */
         background: $bg-gradient;
@@ -411,7 +443,6 @@ ul.contact li a:before
 }
 
 #logo h1 {
-    display: inline-block;
     margin-bottom: 0.20em;
     padding: 0.20em 0.9em;
     font-size: 3.5em;

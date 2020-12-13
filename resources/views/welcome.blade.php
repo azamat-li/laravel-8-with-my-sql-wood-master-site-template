@@ -56,8 +56,19 @@
     });
 
 </script>
-<div class="type-js headline bg-gray-800 mt-4 mb-2 rounded-full">
-    </h1><h1 class="text-js float-left">Изделия из дерева.</h1>
+
+{{-- For  mobile screen--}}
+<div class="lg:hidden block">
+    <div class="bg-gray-800 bg-gradient  rounded-full  block flex my-2">
+         </h1><h1 class="float-left ">Из дерева.</h1>
+    </div>
+</div>
+
+{{-- For large screen--}}
+<div class="hidden lg:block">
+    <div class="type-js bg-gradient bg-gray-800 rounded-full block mt-4">
+        </h1><h1 class="text-js float-left">Изделия из дерева.</h1>
+    </div>
 </div>
 @endsection
 
@@ -69,7 +80,7 @@
         <div class="title">
             <h2>Рады вас видеть в нашей мастерской.</h2>
         </div>
-        <p>Столярный цех <strong>ИП Алибаев</strong> - это индивидуальный подход и учёт желаний каждого клиента </p>
+        <p>Столярный цех <strong>ИП Алибаев</strong> - это индивидуальный подход и учёт желаний каждого клиента. </p>
     </div>
 </div>
 <div id="wrapper"></div>

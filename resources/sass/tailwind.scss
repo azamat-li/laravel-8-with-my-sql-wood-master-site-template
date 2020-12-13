@@ -31,42 +31,10 @@
     @apply border-transparent bg-blue-400 text-blue-50;
 }
 
+
 /*********************************************************************************/
 /* Menu                                                                          */
 /*********************************************************************************/
-
-#menu
-{
-}
-
-#menu ul
-{
-    display: inline-block;
-    padding: 0 2em;
-    background: #2d3748;
-    text-align: center;
-}
-
-#menu li
-{
-    display: inline-block;
-}
-
-#menu li a, #menu li span
-{
-    display: inline-block;
-    padding: 1.3em 1.5em;
-    text-decoration: none;
-    font-size: 0.90em;
-    font-weight: 600;
-    text-transform: uppercase;
-    outline: 0;
-    color: #FFF;
-}
-
-#menu li:hover a, #menu li.active a, #menu li.active span
-{
-}
 
 // Only when navigator on that page
 #menu .current_page_item a
@@ -83,4 +51,6 @@
     @apply rounded-r-full;
 }
 
-
+#menu li
+{
+}

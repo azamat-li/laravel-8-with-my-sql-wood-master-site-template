@@ -37,11 +37,11 @@ Released   : 20131025
 <div id="header-wrapper">
     <div id="header" class="pl-6 font-bold">
         <div id="logo">
-            <div class=" bg-gray-800 flex rounded-full lg:w-1/4 md:w-1/2 sm:w-3/5 ">
+            <div class=" bg-gray-800 flex rounded-full lg:w-1/4 md:w-1/2  ">
                 <h1 id="company-title" class="rounded-full  "><a href="/" >ИП Алибаев</a></h1>
             </div>
-            <div id="menu" class=" pt-2 pb-1">
-                <ul class="rounded-full">
+            <div id="menu" class=" pt-2 pb-1  flex  flex-col justify-between">
+                <ul class="rounded-full flex">
                     <li class="{{Request::path() === '/' ? 'current_page_item current_page_item_left ' : ''}}"><a href="/"
                                                                                           class="current_page_item"
                                                                                           accesskey="1"
@@ -86,7 +86,7 @@ Released   : 20131025
 
 @yield('content')
 
-<div  id="copyright" class=" lg:h-72 grid justify-items-center " >
+<div  id="copyright" class=" lg:h-72 h-16 grid justify-items-center " >
     <div ></div>
     <div >ИП Алибаев | Based on design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</div>
 </div>
