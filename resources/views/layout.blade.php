@@ -33,32 +33,37 @@ Released   : 20131025
     </script>
 </head>
 
+
+
 <body>
-<div id="header-wrapper">
+<div id="header-wrapper" class="">
     <div id="header" class="pl-6 font-bold">
-        <div id="logo">
-            <div class=" bg-gray-800 flex rounded-full lg:w-1/4 md:w-1/2  ">
-                <h1 id="company-title" class="rounded-full  "><a href="/" >ИП Алибаев</a></h1>
+        <div id="logo" class="mr-4">
+            <div class=" bg-gray-800 flex rounded-full lg:w-96 lg:py-4  lg:p-8 p-4">
+                <h4  class="rounded-full flex lg:text-4xl text-2xl"><a href="/" >ИП Алибаев</a></h4>
             </div>
-            <div id="menu" class=" pt-2 pb-1  flex  flex-col justify-between">
-                <ul class="rounded-full flex">
-                    <li class="{{Request::path() === '/' ? 'current_page_item current_page_item_left ' : ''}}"><a href="/"
-                                                                                          class="current_page_item"
+            <div id="menu" class="flex lg:rounded-full rounded-3xl flex-col bg-gray-800 py-1 h-full h-16 my-1 lg:flex-row items-center justify-center lg:justify-between w-full h-full ">
+                <ul class=" lg:flex  lg:items-center lg:content-center w-full text-center  lg:gap-x-7">
+                    <li class="{{Request::path() === '/' ? 'current_page_item' : ''}} "><a href="/"
+                                                                                          class="lg:items-center lg:justify-center  lg:flex lg:rounded-l-full lg:rounded-r-none lg:border-0
+                                                                                           lg:ml-1  justify-center
+                                                                                          border-l-4 border-r-4  border-gray-800
+                                                                                          rounded-t-3xl   current_page_item"
                                                                                           accesskey="1"
                                                                                           title="Домашняя">Домашняя</a>
                     </li>
                     <li class="{{Request::path() === 'about' ? 'current_page_item' : ''}}"><a href="/about"
-                                                                                              class="current_page_item"
+                                                                                              class="current_page_item  lg:flex lg:p-0 lg:m-0  "
                                                                                               accesskey="2"
                                                                                               title="Об ИП">Об ИП</a>
                     </li>
-                    <li class="{{Request::path() === 'clients' ? 'current_page_item' : ''}}"><a href="/clients"
-                                                                                                class=" current_page_item "
+                    <li class="{{Request::path() === 'clients' ? 'current_page_item' : ''}} "><a href="/clients"
+                                                                                                class="w-full current_page_item "
                                                                                                 accesskey="3"
                                                                                                 title="Клиенты">Клиенты</a>
                     </li>
                     <li class="{{Request::path() === 'products' ? 'current_page_item' : ''}}"><a href="/products"
-                                                                                                 class=" current_page_item"
+                                                                                                 class=" current_page_item "
                                                                                                  accesskey="4"
                                                                                                  title="Из дерева">Из
                             дерева</a></li>
@@ -72,13 +77,14 @@ Released   : 20131025
                                                                                                  accesskey="7"
                                                                                                  title="Контакты">Контакты</a>
                     </li>
-                    <li class="{{Request::path() === 'feedback' ? 'current_page_item current_page_item_right' : ''}}"><a href="/feedback"
-                                                                                                 class=" current_page_item "
+                    <li class="{{Request::path() === 'feedback' ? 'current_page_item lg:current_page_item_right' : ''}}"><a href="/feedback"
+                                                                                                 class="current_page_item  lg:rounded-r-full lg:rounded-l-none lg:border-0
+                                                                                                         border-l-4 border-r-4  border-gray-800   rounded-b-3xl  "
                                                                                                  accesskey="8"
                                                                                                  title="Связаться">Связаться</a>
                     </li>
                 </ul>
-            </div>
+        </div>
             @yield('auto-type')
         </div>
     </div>

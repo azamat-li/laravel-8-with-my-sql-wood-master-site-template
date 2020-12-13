@@ -58,16 +58,16 @@
 </script>
 
 {{-- For  mobile screen--}}
-<div class="lg:hidden block">
-    <div class="bg-gray-800 bg-gradient  rounded-full  block flex my-2">
-         </h1><h1 class="float-left ">Из дерева.</h1>
+<div class="lg:hidden block flex">
+    <div class="bg-gray-800 bg-gradient  rounded-full  block flex my-2 ">
+         </h1><h1 class="float-left flex text-4xl p-4">Изделия из дерева.</h1>
     </div>
 </div>
 
 {{-- For large screen--}}
 <div class="hidden lg:block">
     <div class="type-js bg-gradient bg-gray-800 rounded-full block mt-4">
-        </h1><h1 class="text-js float-left">Изделия из дерева.</h1>
+        </h1><h1 class="text-js float-left text-4xl p-4">Изделия из дерева.</h1>
     </div>
 </div>
 @endsection

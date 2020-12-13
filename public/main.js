@@ -81,15 +81,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./resources/sass/vanilla.scss");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./resources/sass/tailwind.scss");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/sass/vanilla.scss":
-/*!*************************************!*\
-  !*** ./resources/sass/vanilla.scss ***!
-  \*************************************/
+/***/ "./resources/sass/tailwind.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/tailwind.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

@@ -1,4 +1,6 @@
 {
-    "/main.js": "/main.js",
-    "/css/vanilla.css": "/css/vanilla.css"
+    "/js/app.js": "/js/app.js",
+    "/css/vanilla.css": "/css/vanilla.css",
+    "/css/tailwind.css": "/css/tailwind.css",
+    "/js/jquery.min.js": "/js/jquery.min.js"
 }
