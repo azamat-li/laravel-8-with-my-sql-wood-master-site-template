@@ -21,7 +21,7 @@
 
 @section('content')
 <div id="page-wrapper" class="text-gray-600 text-2xl ">Завершенные проекты</div>
-<p id="page-wrapper" class="text-lg pb-4 p-2 text-center"> Здесь Вы можете ознакомиться с выполненными заказами
+<p id="page-hint" > Здесь Вы можете ознакомиться с выполненными заказами
     различной
     сложности.
 </p>

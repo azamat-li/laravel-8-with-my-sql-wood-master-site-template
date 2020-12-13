@@ -19,7 +19,7 @@
 <div id="page-wrapper" class="text-gray-600 text-2xl border-t border-b border-gray-200">
     Контакты.
 </div>
-<div id="page-wrapper" class="text-lg pb-4 p-2  text-center">
+<div id="page-hint" >
     Для связи с
     <strong> ИП Алибаев</strong> вы можете воспользоваться удобным для вас способом связи из указанных ниже.
 </div>

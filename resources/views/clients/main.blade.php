@@ -19,7 +19,7 @@
 <div id="page-wrapper" class="text-gray-600 text-2xl ">
     С кем мы сотрудничаем
 </div>
-<div id="page-wrapper" class="text-lg pb-4 p-2 text-center">
+<div id="page-hint" >
     Здесь представлены уже воспользовавшиеся услугами
     <strong> Алибаев ИП</strong>
     организации.

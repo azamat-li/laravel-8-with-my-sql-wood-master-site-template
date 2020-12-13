@@ -21,7 +21,7 @@
 
 @section('content')
 <div id="page-wrapper" class="text-gray-600 text-2xl ">Открытые вакансии.</div>
-<p id="page-wrapper" class="text-lg pb-4 p-2 text-center">Здесь можно узнать о возможностях трудоустройства в организации или сотрудничества с
+<p id="page-hint" >Здесь можно узнать о возможностях трудоустройства в организации или сотрудничества с
     <strong> ИП Алибаев</strong>.
 </p>
 <div id="wrapper">

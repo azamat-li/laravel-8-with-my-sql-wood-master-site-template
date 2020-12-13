@@ -19,7 +19,7 @@
 <div id="page-wrapper" class="text-gray-600 text-2xl ">
     Об индивидуальном предпринимателе.
 </div>
-<div id="page-wrapper" class="text-lg pb-4 p-2 text-center">
+<div id="page-hint" class="">
     Здесь можно найти общую информацию по столярному цеху
     <strong> ИП Алибаев</strong>.
 </div>
