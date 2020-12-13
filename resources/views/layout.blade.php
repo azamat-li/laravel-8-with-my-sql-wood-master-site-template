@@ -92,7 +92,7 @@ Released   : 20131025
 
 @yield('content')
 
-<div  id="copyright" class=" lg:h-72 h-16 grid justify-items-center " >
+<div  id="copyright" class=" lg:h-44 h-20 grid justify-items-center " >
     <div ></div>
     <div >ИП Алибаев | Based on design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</div>
 </div>

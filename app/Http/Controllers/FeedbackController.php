@@ -19,9 +19,9 @@ class FeedbackController extends Controller
      *
      * @return Application|Factory|View|Response
      */
-    public function index()
+    public function main()
     {
-        return view('feedback.index');
+        return view('feedback.main');
     }
 
 

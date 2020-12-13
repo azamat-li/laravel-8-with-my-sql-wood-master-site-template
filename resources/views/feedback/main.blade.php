@@ -22,8 +22,7 @@
         <strong> ИП Алибаев</strong> информацию.
     </div>
     <div id="wrapper">
-        <div id="three-column" class="container"></div>
-        <div id="portfolio" class="container">
+        <div class="lg:px-4">
             <form
                 method="POST"
                 action="/feedback" class="shadow-md rounded-3xl px-4 py-6 bg-write">

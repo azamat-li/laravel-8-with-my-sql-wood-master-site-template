@@ -29,7 +29,7 @@ Route::get('/contacts', function () {
     return view('contacts');
 });
 
-Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
+Route::get('/feedback', [FeedbackController::class, 'main'])->name('feedback.main');
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 
 Route::get('/careers', [CareerController::class, 'index'])->name('careers.index');
