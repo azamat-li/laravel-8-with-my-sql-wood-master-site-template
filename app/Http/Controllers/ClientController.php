@@ -19,14 +19,14 @@ class ClientController extends Controller
      * To display a listing of the clients.
      * @return Application|Factory|View
      */
-    public function index()
+    public function main()
     {
         if (request('Tag')) {
             $clients = Tag::where('name', request('client_only_tag'))->firstOrFail()->products;
         } else {
             $clients = Client::latest()->get();
         }
-        return view('clients.index', ['clients' => $clients]);
+        return view('clients.main', ['clients' => $clients]);
     }
 
     /**

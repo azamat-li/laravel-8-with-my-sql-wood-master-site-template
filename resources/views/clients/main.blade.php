@@ -25,16 +25,16 @@
     организации.
 </div>
 <div id="wrapper">
-    <div id="three-column">
-        <div class="gallery py-16 pl-8">
+    <div id="three-column" class="mx-4 my-6">
+        <div class="gallery mx-4 my-6 ">
             @forelse($clients as $client)
-            <div id="tbox1" class="bg-gray-100 p-2 gallery-item  rounded-2xl">
+            <div  class=" p-2 gallery-item  rounded-2xl">
                 <h2 class="title p-2">{{ $client->name}}</h2>
                 <div id="eyebrow" class="rounded-full p-0.5 mx-1.5 mt-1 mb-2"
                      style="background-color: {{ $client->color}}"></div>
                 <p class="text-gray-500">{{$client->about}}</p>
-                <div class="pt-12 pb-1">
-                    <a href="{{ route('clients.show', $client->id) }}" class="button flex flex-wrap">О Клиенте {{
+                <div class="pt-12 pb-5">
+                    <a href="{{ route('clients.show', $client->id) }}" class="button">О Клиенте {{
                         $client->name }} </a>
                 </div>
             </div>

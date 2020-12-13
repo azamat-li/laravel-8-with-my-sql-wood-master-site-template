@@ -70,7 +70,7 @@
                     </div>
                 </dl>
             </div>
-            <div class="rounded-2xl w-full ">
+            <div class="rounded-2xl w-full lg:px-64">
                 <div class="w-full" style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0;">Yandex.Maps</a><a href="https://yandex.com/maps/geo/selo_akhunovo/53071444/?ll=59.604049%2C54.204921&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Yandex.Maps</a><iframe src="https://yandex.com/map-widget/v1/-/CCUEMAc-sB" width="720" height="400"  style="position:relative;"></iframe></div>
             </div>
         </div>

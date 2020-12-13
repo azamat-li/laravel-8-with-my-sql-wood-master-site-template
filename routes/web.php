@@ -40,7 +40,7 @@ Route::get('/products/{product}/edit', [ProductController::class, 'edit']);
 Route::get('/products/{product}/edit', [ProductController::class, 'update']);
 
 
-Route::get('/clients', [ClientController::class, 'index'])->name('clients.index');
+Route::get('/clients', [ClientController::class, 'main'])->name('clients.main');
 Route::post('/clients', [ClientController::class, 'store']);
 Route::get('/clients/create', [ClientController::class, 'create']);
 Route::delete('/clients/{client}', [ClientController::class, 'destroy'])->name('client.destroy');
