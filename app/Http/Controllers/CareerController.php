@@ -11,7 +11,7 @@ class CareerController extends Controller
 {
     //
     public function show(Career $career){
-        return view('careers.show', ['career' => $career]) ;
+        return view('careers.show', ['career' => $career]);
     }
 
     public function index(){
@@ -21,6 +21,6 @@ class CareerController extends Controller
             $careers = Career::latest()->get();
         }
 
-        return view('careers.index', ['careers' => $careers] );
+        return view('careers.index', compact($careers) );
     }
 }

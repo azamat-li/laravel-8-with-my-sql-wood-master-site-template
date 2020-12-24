@@ -46,15 +46,12 @@ class ClientController extends Controller
     public function store()
     {
 
-        $this->validateClient();
+        $attrs = $this->validateClient();
 
-        $client = Client::create([
-            'name' => request('name'),
-            'about' => request('about'),
-        ]);
+        Client::create($attrs);
 
         if (request('tags')) {
-            $client->tags()->attach(request('tags'));
+            $attrs->tags()->attach(request('tags'));
         }
 
         return redirect('/clients');
@@ -114,12 +111,14 @@ class ClientController extends Controller
      *
      * Validating form data provided by view.
      */
-    public function validateClient(): void
+    public function validateClient(): array
     {
-        request()->validate([
+        $validatedAttrs = request()->validate([
             'name' => 'required',
             'about' => 'required',
             'tags' => 'exists:tags,id'
         ]);
+
+        return $validatedAttrs;
     }
 }

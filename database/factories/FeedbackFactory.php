@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Career;
+use App\Models\Feedback;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class CareerFactory extends Factory
+class FeedbackFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Career::class;
+    protected $model = Feedback::class;
 
     /**
      * Define the model's default state.
@@ -22,9 +22,8 @@ class CareerFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name,
-            'field' => $this->faker->word,
-            'description' =>$this->faker->paragraph,
+           'email' => $this->faker->email,
+           'message' => $this->faker->sentence
         ];
     }
 }

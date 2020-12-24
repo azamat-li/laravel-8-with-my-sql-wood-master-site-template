@@ -5,7 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Career extends Model
+class Feedback extends Model
 {
-    use HasFactory;
+   use HasFactory;
+
+   protected $guarded = [];
+
 }
