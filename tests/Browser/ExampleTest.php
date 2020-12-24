@@ -13,11 +13,11 @@ class ExampleTest extends DuskTestCase
      *
      * @return void
      */
-    public function testBasicExample()
+    public function a_visitor_can_see_company_name()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/')
-                    ->assertSee('Laravel');
+                    ->assertSee('ИП Алибаев');
         });
     }
 }
