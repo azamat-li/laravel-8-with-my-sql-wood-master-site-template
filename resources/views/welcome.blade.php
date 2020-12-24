@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 @section('head')
 <title>ИП Алибаев</title>

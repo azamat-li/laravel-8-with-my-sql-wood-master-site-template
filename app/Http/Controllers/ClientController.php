@@ -88,7 +88,6 @@ class ClientController extends Controller
         $client->update([
                 'name' => request('name'),
                 'about' => request('about'),
-                'slug' => request('name')
         ]);
 
         return redirect('/clients/'.$client->id);

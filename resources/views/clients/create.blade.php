@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 
 @section('head')
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Добавить клиента</title>
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
-      rel="stylesheet"/>
-<link href="{{asset('css/default.css')}}" rel="stylesheet"/>
-<link href="{{asset('css/fonts.css')}}"" rel="stylesheet"  />
-<link href="{{asset('css/app.css')}}" rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Добавить клиента</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
+          rel="stylesheet"/>
+    <link href="{{asset('css/default.css')}}" rel="stylesheet"/>
+    <link href="{{asset('css/fonts.css')}}" rel="stylesheet"/>
+    <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 @endsection
 
 @extends ('layout')
 
 @section('content')
-<div id="wrapper">
-    <div id="page" class="container">
-        <div class="section">
-            <h1 class="heading has-text-weight-bold is-size-4">Новый Клиент</h1>
-            <form method="POST" action="/clients">
-                @csrf
-                <div class="field">
+    <div id="wrapper">
+        <div id="page" class="container">
+            <div class="section">
+                <h1 class="heading has-text-weight-bold is-size-4">Новый Клиент</h1>
+                <form method="POST" action="/clients">
+                    @csrf
                     <div class="field">
-                        <label class="label" for="name">Имя Клиента</label>
-                        <div class="control">
-                            <input type="text" class="input @error('name') alert @enderror" name="name" id="name"
-                                   required
-                                   value="{{ old('name') }}">
+                        <div class="field">
+                            <label class="label" for="name">Имя Клиента</label>
+                            <div class="control">
+                                <input type="text" class="input @error('name') alert @enderror" name="name" id="name"
+                                       required
+                                       value="{{ old('name') }}">
 
                             @error('name')
                             <p class="help is-danger alert">{{ $errors->first('name') }}</p>
