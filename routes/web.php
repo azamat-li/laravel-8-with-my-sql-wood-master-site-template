@@ -32,7 +32,7 @@ Route::get('/contacts', function () {
 Route::get('/feedback', [FeedbackController::class, 'main'])->name('feedback.main');
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 
-Route::get('/careers', [CareerController::class, 'index'])->name('careers.index');
+Route::get('/careers', [CareerController::class, 'main'])->name('careers.main');
 Route::get('/careers/{career}', [CareerController::class, 'show'])->name('careers.show');
 
 Route::get('/products', [ProductController::class, 'main'])->name('products.main');

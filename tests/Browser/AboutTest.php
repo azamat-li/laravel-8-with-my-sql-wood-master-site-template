@@ -2,22 +2,18 @@
 
 namespace Tests\Browser;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
 use Tests\DuskTestCase;
 
 class AboutTest extends DuskTestCase
 {
-    /**
-     * A Dusk test example.
-     *
-     * @return void
-     */
-    public function testExample()
+    /** @test */
+    public function can_access_about()
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('/')
-                    ->assertSee('Laravel');
+            $browser->visit('/about')
+                ->assertSee('Об');
         });
     }
+
 }

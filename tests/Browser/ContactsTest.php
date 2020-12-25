@@ -2,22 +2,20 @@
 
 namespace Tests\Browser;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
 use Tests\DuskTestCase;
 
 class ContactsTest extends DuskTestCase
 {
-    /**
-     * A Dusk test example.
-     *
-     * @return void
-     */
-    public function testExample()
+    /** @test */
+    public function can_see_contacts()
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('/')
-                    ->assertSee('Laravel');
+            $browser->visit('/contacts')
+                ->assertSee('Контакты')
+                ->assertSee('Электронная почта')
+                ->assertSee('Адрес')
+                ->assertSee('Yandex.Maps');
         });
     }
 }
