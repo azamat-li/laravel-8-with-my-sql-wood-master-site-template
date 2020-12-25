@@ -16,5 +16,4 @@ yarn-error.log
 /.idea/*
 /public/css/tailwind.css
 /public/css/vanilla.css
-
 .vercel
