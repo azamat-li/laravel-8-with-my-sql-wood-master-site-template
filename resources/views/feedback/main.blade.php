@@ -40,7 +40,6 @@
                     <label for="message" class=" text-center pt-2 text-bold  text-lg ">Хочу сообщить</label>
                     <textarea class="w-full text-lg px-2  border rounded-2xl" name="message" id="message"></textarea>
                 </div>
-                <button type="submit" name="submit" class="text-center font-bold w-full text-lg"></button>
                 <div class="text-center  w-full ">
                     <button
                         type="submit"

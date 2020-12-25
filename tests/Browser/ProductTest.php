@@ -13,13 +13,11 @@ class ProductTest extends DuskTestCase
     use WithFaker, RefreshDatabase;
 
     /** @test */
-    public function can_view_products()
+    public function can_visit_products()
     {
-
         $this->browse(function (Browser $browser) {
-            $browser->visit('/')
-                ->assertSee('');
+            $browser->visit('/products')
+                ->assertSee('проекты');
         });
     }
-
 }

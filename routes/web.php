@@ -35,7 +35,7 @@ Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.s
 Route::get('/careers', [CareerController::class, 'index'])->name('careers.index');
 Route::get('/careers/{career}', [CareerController::class, 'show'])->name('careers.show');
 
-Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+Route::get('/products', [ProductController::class, 'main'])->name('products.main');
 Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
 Route::get('/products/{product}/edit', [ProductController::class, 'edit']);
 Route::get('/products/{product}/edit', [ProductController::class, 'update']);
