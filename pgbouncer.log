@@ -1,0 +1,5 @@
+2021-01-02 22:07:55.143 +05 [77020] LOG kernel file descriptor limit: 1024 (hard: 1048576); max_client_conn: 100, max expected fd use: 152
+2021-01-02 22:07:55.145 +05 [77020] LOG listening on [::1]:6432
+2021-01-02 22:07:55.145 +05 [77020] WARNING cannot listen on 127.0.0.1:6432: bind(): Address already in use
+2021-01-02 22:07:55.146 +05 [77020] LOG listening on unix:/tmp/.s.PGSQL.6432
+2021-01-02 22:07:55.146 +05 [77020] LOG process up: PgBouncer 1.14.0, libevent 2.1.12-stable (epoll), adns: c-ares 1.16.1, tls: OpenSSL 1.1.1f  31 Mar 2020
