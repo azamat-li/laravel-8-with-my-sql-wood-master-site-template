@@ -4,6 +4,7 @@ use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $visits = Redis::incr('visits');
+
+    return view('welcome')->withVisits($visits);
 });
 
 Route::get('/about', function () {

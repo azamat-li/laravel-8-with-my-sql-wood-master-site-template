@@ -74,13 +74,15 @@
 @extends ('layout')
 
 @section('content')
-<div id="page-wrapper">
-    <div id="page" class="container">
-        <div class="title">
-            <h2>Рады вас видеть в нашей мастерской.</h2>
+    <div id="page-wrapper">
+        <div id="page" class="container">
+            <div class="title">
+                <h2>Рады видеть постетителя <strong>#{{ $visits }}</strong> нашей мастерской.</h2>
+            </div>
+            <div id="page-hint">Столярный цех <strong>ИП Алибаев</strong> - это индивидуальный подход и учёт желаний
+                каждого клиента.
+            </div>
         </div>
-        <div id="page-hint">Столярный цех <strong>ИП Алибаев</strong> - это индивидуальный подход и учёт желаний каждого клиента. </div>
     </div>
-</div>
-<div id="wrapper"></div>
+    <div id="wrapper"></div>
 @endsection
