@@ -77,7 +77,7 @@
     <div id="page-wrapper">
         <div id="page" class="container">
             <div class="title">
-                <h2>Рады видеть постетителя <strong>#{{ $visits }}</strong> нашей мастерской.</h2>
+                <h2>Рады видеть постетителя <strong>#{{ $visits ?? 'число которого мы пока не подсчитываем' }}</strong> нашей мастерской.</h2>
             </div>
             <div id="page-hint">Столярный цех <strong>ИП Алибаев</strong> - это индивидуальный подход и учёт желаний
                 каждого клиента.
