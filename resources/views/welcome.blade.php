@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 @section('head')
-<title>ИП Алибаев</title>
+<title xmlns="http://www.w3.org/1999/html">ИП Алибаев</title>
 <meta
     content="столярной цех в Учалинском районе, столярной цех в Учалинском районе, столярной цех в селе Ахуново, столярной цех села Ахуново, Ильдар Ильгамович Алибаев"
     name="keywords"/>
@@ -77,10 +77,11 @@
     <div id="page-wrapper">
         <div id="page" class="container">
             <div class="title">
-                <h2>Рады видеть постетителя <strong>#{{ $visits ?? 'число которого мы пока не подсчитываем' }}</strong> нашей мастерской.</h2>
+                <h2>Рады  <strong>#{{ $visits ?? 'не подсчитываемому пока' }}</strong> просмотру нашей мастерской.</h2>
             </div>
             <div id="page-hint">Столярный цех <strong>ИП Алибаев</strong> - это индивидуальный подход и учёт желаний
                 каждого клиента.
+            <comment></comment>
             </div>
         </div>
     </div>

@@ -19,10 +19,10 @@ use Illuminate\Support\Facades\Route;
 
 */
 Route::get('/', function () {
-#   $visits = Redis::incr('visits');
+   $visits = Redis::incr('visits');
 
-#   return view('welcome')->withVisits($visits);
-   return view('welcome');
+   return view('welcome')->withVisits($visits);
+#   return view('welcome');
 });
 
 Route::get('/about', function () {
