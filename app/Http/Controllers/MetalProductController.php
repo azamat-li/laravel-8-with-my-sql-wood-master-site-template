@@ -37,7 +37,7 @@ class MetalProductController extends Controller
 //
 //        Mail::raw($message, function ($message) {
 //            $message->to('azamatalifullstack@gmail.com')
-//                ->subject('Сообщение клиентов ИП Алибаев');
+//                ->subject('Сообщение клиентов Столярофф Цех');
 //        });
 //
 //        ddd($message);

@@ -3,23 +3,23 @@
 @section('head')
     <title>Система обратной связи столярного цеха села Ахуново Учалинского района</title>
     <meta
-        content="feedback, обратная связь столярного цеха в Учалинском районе, сообщить столярному цеху в Учалинском районе, связь со столярным цехом в селе Ахуново, отправить сообщение в столярной цех села Ахуново"
+        content="feedback, обратная связь столярного цеха в Учалинском районе, сообщить столярному цеху в Учалинском районе, связь со столярным цехом в селе Ахуново, отправить сообщение в столярный цех села Ахуново"
         name="keywords"/>
     <meta
         content="Обратная связь столярного цеха села Ахуново Учалинского района"
         name="description"/>
     <meta
-        content="ИП Алибаев"
+        content="ИП Столярофф Цех"
         name="author"/>
 @endsection
 
 @extends ('layout')
 
 @section('content')
-    <div id="page-wrapper" class="text-gray-600 text-2xl ">Обратная связь</div>
+    <div id="page-wrapper" class="text-gray-600 text-2xl ">Улучшить мастерскую.</div>
     <div id="page-hint" >
-        Здесь можно заказать изделие или сообщить релевантую столярному цеху
-        <strong> ИП Алибаев</strong> информацию.
+        Здесь можно заказать изделие либо что-то посоветовать мастерской
+        <strong>Столярофф Цех</strong>.
     </div>
     <div id="wrapper">
         <div class="lg:px-4">
@@ -44,7 +44,7 @@
                     <button
                         type="submit"
                         class="border border-yellow-600 text-yellow-600 rounded-full px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-yellow-600 focus:outline-none focus:shadow-outline">
-                        Сообщить ИП
+                        Сообщить Цеху
                     </button>
 
                     @if(session('message'))

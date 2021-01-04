@@ -23,7 +23,7 @@
 </div>
 <div id="page-hint">
     Здесь представлены уже воспользовавшиеся услугами
-    <strong> Алибаев ИП</strong>
+    <strong> Столярофф Цех ИП</strong>
     организации.
 </div>
 <div id="wrapper">

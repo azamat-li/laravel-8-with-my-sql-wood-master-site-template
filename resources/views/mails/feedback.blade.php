@@ -1,15 +1,15 @@
 @component('mail::message')
-## От ИП Алибаев
+## От Цеха Столярофф
 
 Похоже, что вы интересовались темой
 
-ИП Алибаев, это
+Столярофф Цех, это:
 
 - Индивидуальный подход
 - Несинтетические материалы
 
-@component('mail::button', ['url' => 'localhost:8000'])
-Посетить ИП Алибаев
+@component('mail::button', ['url' => 'https://ip-alibaev.vercel.app'])
+Посетить
 @endcomponent
 
 

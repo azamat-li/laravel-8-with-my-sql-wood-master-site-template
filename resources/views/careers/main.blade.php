@@ -8,7 +8,7 @@
         content="Работа в столярном цехе села Ахуново Учалинского района"
         name="description"/>
     <meta
-        content="ИП Алибаев"
+        content="ИП Столярофф Цех"
         name="author"/>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
@@ -21,8 +21,8 @@
 
 @section('content')
 <div id="page-wrapper" class="text-gray-600 text-2xl ">Открытые вакансии.</div>
-<p id="page-hint" >Здесь можно узнать о возможностях трудоустройства в организации или сотрудничества с
-    <strong> ИП Алибаев</strong>.
+<p id="page-hint" >Здесь можно узнать о возможностях трудоустройства в организации или сотрудничества со
+    <strong> Столярофф Цех</strong>.
 </p>
 <div id="wrapper">
     <div  id="three-column">
