@@ -21,6 +21,9 @@ Released   : 20131025
     <link href="{{asset('css/vanilla.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/tailwind.css')}}" rel="stylesheet"/>
 
+{{--    From CDN --}}
+{{--    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">--}}
+
 
     <!--  jquery from CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
