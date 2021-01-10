@@ -15,19 +15,16 @@ Released   : 20131025
     @yield('head')
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
-    <link href="{{asset('css/fonts.css')}}" rel="stylesheet"/>
-    <link href="{{asset('css/vanilla.css')}}" rel="stylesheet"/>
-    <link href="{{asset('css/tailwind.css')}}" rel="stylesheet"/>
-
-{{--    From CDN --}}
-{{--    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">--}}
-
+    <link href="/css/fonts.css" rel="stylesheet"/>
+    <link href="/css/vanilla.css" rel="stylesheet"/>
+    <link href="/css/tailwind.css" rel="stylesheet"/>
 
     <!--  jquery from CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+    {{--    <script type="text/javascript" src="/js/jquery.min.js"></script>--}}
     <!-- Before page is completely loaded script -->
     <script>
         $(document).ready(function () {

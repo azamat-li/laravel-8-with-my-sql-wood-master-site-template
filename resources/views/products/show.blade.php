@@ -15,13 +15,12 @@ Released   : 20131025
     <title></title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
-    <link href="{{asset('css/default.css')}}" rel="stylesheet"/>
-    <link href="{{asset('css/fonts.css')}}"
-    " rel="stylesheet" />
-    <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/css/default.css" rel="stylesheet"/>
+    <link href="/css/fonts.css"
+     rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet"/>
 </head>
 
 <body>
