@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
 
-Name       : Brushwood
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20131025
+@section('head')
+<title>О Столярофф Цехе</title>
+<meta
+    content="о столярном цехе в Учалинском районе, о столярном цехе в Учалинском районе, о столярном цехе в селе Ахуново, о столярном цехе села Ахуново"
+    name="keywords"/>
+<meta
+    content="О столярном цехе Столярофф Цех села Ахуново Учалинского района"
+    name="description"/>
+<meta
+    content="ИП Столярофф Цех"
+    name="author"/>
+@endsection
 
--->
-<body>
 @extends ('layout')
 
 @section('content')
 <div id="page-wrapper" class="text-gray-600 text-2xl ">
-   Об индивидуальном предпринимателе.
+    Об индивидуальном предпринимателе.
 </div>
-<div id="page-wrapper" class="text-lg pb-4 p-2 text-center">
-    Здесь можно найти общую информацию по столярному цеху
-    <strong> ИП Алибаев</strong>.
+<div id="page-hint" class="">
+    Здесь можно найти общую информацию по предприятию
+    <strong>Столярофф Цех</strong>.
 </div>
 <div id="wrapper">
-	<div id="three-column" class="container"></div>
-	<div id="portfolio" class="container"></div>
+    <div id="three-column" class="container"></div>
+    <div id="portfolio" class="container"></div>
 </div>
 @endsection
-
-</body>

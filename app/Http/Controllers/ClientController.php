@@ -4,32 +4,33 @@ namespace App\Http\Controllers;
 
 use App\Models\Client;
 use App\Models\Tag;
+use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Response;
 use Illuminate\Routing\Redirector;
+
 
 class ClientController extends Controller
 {
 
     /**
-     * To display a listing of the resource.
+     * To display a listing of the clients.
      * @return Application|Factory|View
      */
-    public function index()
+    public function main()
     {
         if (request('Tag')) {
             $clients = Tag::where('name', request('client_only_tag'))->firstOrFail()->products;
         } else {
             $clients = Client::latest()->get();
         }
-        return view('clients.index', ['clients' => $clients]);
+        return view('clients.main', ['clients' => $clients]);
     }
 
     /**
-     * To show the form for creating a new resource.
+     * To show the form for creating a new client.
      * @return Application|Factory|View
      */
     public function create()
@@ -39,28 +40,25 @@ class ClientController extends Controller
 
 
     /**
-     * To store a newly created resource in storage.
+     * To store newly created client.
      * @return Application|RedirectResponse|Redirector
      */
     public function store()
     {
 
-        $this->validateClient();
+        $attrs = $this->validateClient();
 
-        $client = Client::create([
-            'name' => request('name'),
-            'about' => request('about'),
-        ]);
+        Client::create($attrs);
 
         if (request('tags')) {
-            $client->tags()->attach(request('tags'));
+            $attrs->tags()->attach(request('tags'));
         }
 
         return redirect('/clients');
     }
 
     /**
-     * To display specified resource.
+     * To display specified client.
      * @param Client $client
      * @return Application|Factory|View
      */
@@ -69,7 +67,7 @@ class ClientController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified client.
      * @param Client $client
      * @return Application|Factory|View
      */
@@ -79,7 +77,7 @@ class ClientController extends Controller
     }
 
     /**
-     * To update  specified resource.
+     * To update specified client.
      * @param Client $client
      * @return Application|RedirectResponse|Redirector
      */
@@ -90,29 +88,36 @@ class ClientController extends Controller
         $client->update([
                 'name' => request('name'),
                 'about' => request('about'),
-                'slug' => request('name')
         ]);
 
         return redirect('/clients/'.$client->id);
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
+     * Remove the specified client from storage.
      * @param Client $client
-     * @return Response
+     * @return Application|RedirectResponse|Redirector
+     * @throws Exception
      */
     public function destroy(Client $client)
     {
-        //
+        $client->delete();
+
+        return redirect('/clients');
     }
 
-    public function validateClient(): void
+    /**
+     *
+     * Validating form data provided by view.
+     */
+    public function validateClient(): array
     {
-        request()->validate([
+        $validatedAttrs = request()->validate([
             'name' => 'required',
             'about' => 'required',
             'tags' => 'exists:tags,id'
         ]);
+
+        return $validatedAttrs;
     }
 }

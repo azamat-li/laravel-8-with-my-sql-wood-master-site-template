@@ -25,7 +25,6 @@ class CareerFactory extends Factory
             'name' => $this->faker->name,
             'field' => $this->faker->word,
             'description' =>$this->faker->paragraph,
-            'slug' =>$this->faker->slug
         ];
     }
 }

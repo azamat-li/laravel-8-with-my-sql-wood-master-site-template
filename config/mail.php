@@ -100,7 +100,8 @@ return [
     */
 
     'markdown' => [
-        'theme' => 'default',
+//       Use custom theme
+        'theme' => 'ip_alibaev',
 
         'paths' => [
             resource_path('views/vendor/mail'),

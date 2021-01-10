@@ -9,14 +9,15 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Client extends Model
 {
-    protected $fillable = ['name', 'about', 'slug'];
+    use HasFactory;
+
+    protected  $guarded = [];
 
     public function path()
     {
-        return route('clients.show', $this->id);
+        return "/clients/{$this->id}";
     }
 
-    use HasFactory;
 
     /**
      * Tags of client

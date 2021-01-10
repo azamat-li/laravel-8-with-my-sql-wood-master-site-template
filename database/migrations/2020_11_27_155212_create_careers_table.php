@@ -19,7 +19,6 @@ class CreateCareersTable extends Migration
             $table->text('description');
             $table->string('field');
             $table->string('name');
-            $table->string('slug');
         });
     }
 

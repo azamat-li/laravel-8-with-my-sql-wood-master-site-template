@@ -16,11 +16,10 @@ class CreateClientsTable extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('tag_id');
-            $table->string('color');
+            $table->string('tag_id')->nullable();
+            $table->string('color')->nullable();
             $table->text('about');
             $table->string('name');
-            $table->string('slug');
         }
         );
     }

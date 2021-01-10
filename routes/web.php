@@ -3,8 +3,8 @@
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\FeedbackController;
-use App\Http\Controllers\MetalProductController;
 use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,10 +16,13 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
 
+*/
 Route::get('/', function () {
-    return view('welcome');
+   $visits = Redis::incr('visits');
+
+   return view('welcome')->withVisits($visits);
+#   return view('welcome');
 });
 
 Route::get('/about', function () {
@@ -30,23 +33,22 @@ Route::get('/contacts', function () {
     return view('contacts');
 });
 
-Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
+Route::get('/feedback', [FeedbackController::class, 'main'])->name('feedback.main');
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 
-Route::get('/metal_products', [MetalProductController::class, 'index'])->name('metal_products.index');
-Route::post('/metal_products', [MetalProductController::class, 'store'])->name('metal_products.store');
+Route::get('/careers', [CareerController::class, 'main'])->name('careers.main');
+Route::get('/careers/{career}', [CareerController::class, 'show'])->name('careers.show');
 
-Route::get('/careers', [CareerController::class, 'index'])->name('careers.index');
-
-Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+Route::get('/products', [ProductController::class, 'main'])->name('products.main');
 Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
 Route::get('/products/{product}/edit', [ProductController::class, 'edit']);
 Route::get('/products/{product}/edit', [ProductController::class, 'update']);
 
 
-Route::get('/clients', [ClientController::class, 'index'])->name('clients.index');
-Route::post('/clients',[ ClientController::class, 'store']);
+Route::get('/clients', [ClientController::class, 'main'])->name('clients.main');
+Route::post('/clients', [ClientController::class, 'store']);
 Route::get('/clients/create', [ClientController::class, 'create']);
-Route::get('/clients/{client}',[ ClientController::class, 'show'])->name('clients.show');
+Route::delete('/clients/{client}', [ClientController::class, 'destroy'])->name('client.destroy');
+Route::get('/clients/{client}', [ClientController::class, 'show'])->name('clients.show');
 Route::get('/clients/{client}/edit', [ClientController::class, 'edit']);
 Route::put('/clients/{client}', [ClientController::class, 'update']);

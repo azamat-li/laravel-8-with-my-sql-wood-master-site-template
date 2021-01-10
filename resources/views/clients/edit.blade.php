@@ -18,18 +18,17 @@ Released   : 20131025
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>
     <link href="{{asset('css/default.css')}}" rel="stylesheet"/>
-    <link href="{{asset('css/fonts.css')}}"
-    " rel="stylesheet" />
+    <link href="{{asset('css/fonts.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
     @section('head')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     @endsection
 </head>
 
 <body>
-    @extends ('layout')
+@extends ('layout')
 
-    @section('content')
+@section('content')
     <div id="page-wrapper"></div>
     <div id="wrapper">
 	<div id="three-column" class="container"></div>
@@ -71,6 +70,19 @@ Released   : 20131025
                     <div class="field is-grouped">
                         <div class="control">
                             <button class="button is-text" type="submit">Обновить информацию о клиенте</button>
+                        </div>
+                        <div class="control">
+                            {{--                            {{ Form::open(array('url' => 'clients/' . $value->id, 'class' => 'pull-right')) }}--}}
+                            {{--                            {{ Form::hidden('_method', 'DELETE') }}--}}
+                            {{--                            {{ Form::submit('Delete this client', array('class' => 'border border-red-500 text-red-500--}}
+                            {{--                            hover:bg-red-500 hover:text-gray-200 rounded px-4 py-2')) }}--}}
+                            {{--                            {{ Form::close() }}--}}
+
+                            <button type="submit"
+                                    class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-gray-200 rounded px-4 py-2">
+                                Обновить информацию о клиенте
+                            </button>
+                            <!--                            <button type="button" class="border border-red-500 text-red-500 hover:bg-red-500 hover:text-gray-200 rounded px-4 py-2">Danger</button>-->
                         </div>
                     </div>
                 </div>

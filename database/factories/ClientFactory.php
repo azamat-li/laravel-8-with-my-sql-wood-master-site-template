@@ -26,7 +26,6 @@ class ClientFactory extends Factory
             'about' => $this->faker->text,
             'tag_id' => $this->faker->numberBetween(1, 3),
             'color' => $this->faker->hexColor,
-            'slug' => $this->faker->slug,
         ];
     }
 }

@@ -7,14 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Career extends Model
 {
+    protected $guarded = [];
     use HasFactory;
-
-    /**
-     * Tags of product
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
-    public function tags()
-    {
-        return $this->belongsToMany('App\Models\Tag');
-    }
 }

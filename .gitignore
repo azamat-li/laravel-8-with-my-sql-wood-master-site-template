@@ -4,11 +4,15 @@
 /storage/*.key
 /vendor
 .env
+.env.*.local
 .env.backup
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-/.idea/*
+/.idea/workspace.xml
 /.idea
+/.idea/*
+.vercel
+*.pem

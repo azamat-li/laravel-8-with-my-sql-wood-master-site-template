@@ -11,6 +11,8 @@ class Product extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     /**
      * Tags of product
      * @return BelongsToMany
