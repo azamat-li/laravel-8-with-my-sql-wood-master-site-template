@@ -28,7 +28,7 @@
         <div id="preview" style="@if ($curly) font-style: italic @endif;
             font-family: {{$selected_font_family}};
             " class="text-center font-bold mt-12 p-4 text-6xl ">
-            {{ $label }} with font expected to be {{ $selected_font_family }}
+            {{ $label }}
         </div>
 
         <button type="submit" name="submit" class="text-center font-bold w-full text-lg"></button>

@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FontController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/FontFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_163837_create_fonts_table.php" afterDir="false" />
+    <list default="true" id="e1fdf69c-a77e-4647-b952-17a9061d4ab7" name="Default Changelist" comment="perf(fonts): persisted couple in database">
+      <change afterPath="$PROJECT_DIR$/resources/views/metalproducts/printer-hint.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/AddressLabel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/AdressLabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Font.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/address-label.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/metalproducts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/metalproducts/index.blade.php" afterDir="false" />
     </list>
@@ -161,6 +157,9 @@
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1kelD3fqXQaqaeSLhHwlMRmbOzi" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -252,7 +251,10 @@
       <workItem from="1607060184048" duration="10829000" />
       <workItem from="1607074639051" duration="4825000" />
       <workItem from="1607084300895" duration="4556000" />
-      <workItem from="1607101892101" duration="2924000" />
+      <workItem from="1607101892101" duration="3855000" />
+      <workItem from="1607105920616" duration="3193000" />
+      <workItem from="1607109464060" duration="1100000" />
+      <workItem from="1608339414810" duration="525000" />
     </task>
     <task id="LOCAL-00001" summary="style(gallery): added">
       <created>1606368415252</created>
@@ -401,7 +403,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607091351678</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="perf(fonts): persisted couple in database">
+      <created>1607105151896</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607105151896</updated>
+    </task>
+    <task id="LOCAL-00023" summary="perf(fonts): persisted couple in database">
+      <created>1607106599753</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1607106599753</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +460,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactor(client): to use Client $client argument" />
     <MESSAGE value="style(tailwindcss): added to project" />
     <MESSAGE value="perf(content): of products index.blade.php &amp; clients index.blade.php" />
     <MESSAGE value="style(clients): images not overlap outer div" />
@@ -469,7 +484,8 @@
     <MESSAGE value="build(commitlint): added config files" />
     <MESSAGE value="feat(livewire): integrated &amp; added address-label.blade.php submit page" />
     <MESSAGE value="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label" />
-    <option name="LAST_COMMIT_MESSAGE" value="style(layout): for better navbar look &amp;&#10;perf(addressLabel):  component to use updateLabel() for uppercasing label" />
+    <MESSAGE value="perf(fonts): persisted couple in database" />
+    <option name="LAST_COMMIT_MESSAGE" value="perf(fonts): persisted couple in database" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -21,6 +21,7 @@ Released   : 20131025
 
 @section('content')
     <div class="text-blue-800 font-semibold text-red-500 bg-blue-300">Alpha Version.
+
         <div class="text-sm font-bold ">Страница разрабатывается.</div>
     </div>
     <div id="page-wrapper" class="text-gray-600 text-2xl">
