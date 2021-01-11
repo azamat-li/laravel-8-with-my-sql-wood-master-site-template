@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 @section('head')
-    <title>Система обратной связи столярного цеха села Ахуново Учалинского района</title>
+    <title xmlns="">Система обратной связи столярного цеха села Ахуново Учалинского района</title>
     <meta
         content="feedback, обратная связь столярного цеха в Учалинском районе, сообщить столярному цеху в Учалинском районе, связь со столярным цехом в селе Ахуново, отправить сообщение в столярный цех села Ахуново"
         name="keywords"/>
@@ -11,6 +11,7 @@
     <meta
         content="ИП Столярофф Цех"
         name="author"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
 
 @extends ('layout')
@@ -67,3 +68,11 @@
         @apply py-2 my-2;
     }
 </style>
+
+<script>
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+</script>
