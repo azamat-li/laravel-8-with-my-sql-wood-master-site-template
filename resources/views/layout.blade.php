@@ -10,7 +10,7 @@ Version    : 1.0
 Released   : 20131025
 
 -->
-<html lang="ru">
+<html >
 <head>
     @yield('head')
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
