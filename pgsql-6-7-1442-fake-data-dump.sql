@@ -654,10 +654,6 @@ COPY public.clients (id, created_at, updated_at, tag_id, color, about, name) FRO
 10	2021-01-02 05:44:12	2021-01-02 05:44:12	3	#db6e4a	Consequatur ea perspiciatis ab odit quisquam saepe. Quia voluptates esse et recusandae. Ratione sed dicta quae.	Reginald Gulgowski
 11	2021-01-02 05:44:12	2021-01-02 05:44:12	2	#d0587d	Et minus omnis unde quis voluptas odio. Porro molestiae mollitia cum dolores aut consequatur. Tenetur cumque quia enim quia magni facilis.	Meaghan Anderson
 12	2021-01-02 05:44:12	2021-01-02 05:44:12	1	#9d96de	Explicabo ullam enim aut id. Hic quia distinctio expedita. Illo corporis voluptatem laboriosam quis.	Leopoldo Koss
-13	2021-01-02 05:44:12	2021-01-02 05:44:12	2	#d4c9e1	Est quis atque nostrum autem consequatur autem quas. Voluptate tempore optio repellat corporis soluta maiores. Magni ut est distinctio odit. Ab in consequuntur corporis molestiae est non.	Luz O'Keefe
-14	2021-01-02 05:44:12	2021-01-02 05:44:12	2	#688b54	Sunt aut laudantium laborum quia aliquam. Qui voluptas aperiam quis error voluptatem asperiores facere. Aut quis dolore ut eos molestias.	Prof. Adrianna Von
-15	2021-01-02 05:44:12	2021-01-02 05:44:12	3	#e28f04	Rem nihil laudantium occaecati commodi. Quia ut dolores at fugit. Nihil tempora quasi voluptatem et cum autem voluptas. Id numquam ea impedit expedita aperiam libero architecto.	Miss Ava Hackett III
-16	2021-01-02 05:44:12	2021-01-02 05:44:12	2	#026024	Ipsa voluptas vel quam nihil fuga. Nesciunt eveniet voluptatibus consequatur enim fuga consequatur. Et inventore atque at quae.	Mr. Claud Botsford
 \.
 
 

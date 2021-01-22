@@ -63,9 +63,6 @@ Released   : 20131025
 
                     <div class="field is-grouped">
                         <div class="control">
-                            <button class="button is-text" type="submit">Обновить информацию о клиенте</button>
-                        </div>
-                        <div class="control">
                             {{--                            {{ Form::open(array('url' => 'clients/' . $value->id, 'class' => 'pull-right')) }}--}}
                             {{--                            {{ Form::hidden('_method', 'DELETE') }}--}}
                             {{--                            {{ Form::submit('Delete this client', array('class' => 'border border-red-500 text-red-500--}}
