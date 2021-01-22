@@ -15,6 +15,14 @@ use Illuminate\Routing\Redirector;
 class ClientController extends Controller
 {
 
+# index
+# create
+# store
+# show
+# edit
+# destroy
+# update
+
     /**
      * To display a listing of the clients.
      * @return Application|Factory|View
