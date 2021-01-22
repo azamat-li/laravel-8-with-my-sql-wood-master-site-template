@@ -15,6 +15,7 @@ use Illuminate\Routing\Redirector;
 class ClientController extends Controller
 {
 
+# REST
 # index
 # create
 # store
