@@ -12,7 +12,6 @@ Released   : 20131025
 -->
 <html >
 <head>
-    @yield('head')
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
@@ -27,7 +26,6 @@ Released   : 20131025
 
 
 <body>
-<template>
 <div id="header-wrapper" class="">
     <div id="header" class="pl-6 font-bold">
         <div id="logo" class="mr-4">
@@ -77,7 +75,6 @@ Released   : 20131025
                     </li>
                 </ul>
         </div>
-            @yield('auto-type')
         </div>
     </div>
 </div>
@@ -88,6 +85,4 @@ Released   : 20131025
     <div ></div>
     <div >Столярофф Цех | Based on design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</div>
 </div>
-</template>
 </body>
-<div id="loading" class="text-lg bg-gray-800 text-gray-200 rounded">Идет подготовка...</div>
