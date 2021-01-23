@@ -19,11 +19,7 @@ Released   : 20131025
     <link href="/css/fonts.css" rel="stylesheet"/>
     <link href="/css/vanilla.css" rel="stylesheet"/>
     <link href="/css/tailwind.css" rel="stylesheet"/>
-
-
 </head>
-
-
 
 <body>
 <div id="header-wrapper" class="">
