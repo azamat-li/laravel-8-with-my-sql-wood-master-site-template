@@ -16,3 +16,5 @@ yarn-error.log
 /.idea/*
 .vercel
 *.pem
+npm-debug.log
+yarn-error.log

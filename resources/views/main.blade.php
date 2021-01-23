@@ -4,13 +4,13 @@
 <title>Столярофф Цех</title>
 <meta
     content="столярный цех в Учалинском районе, столярный цех в Учалинском районе, столярный цех в селе Ахуново, столярный цех села Ахуново, Ильдар Ильгамович Алибаев"
-    name="keywords"/>
+    name="keywords" />
 <meta
     content="Столярофф Цех - цех села Ахуново Учалинского района"
-    name="description"/>
+    name="description" />
 <meta
     content="ИП Столярофф Цех"
-    name="author"/>
+    name="author" />
 @endsection
 
 @extends ('layout')
