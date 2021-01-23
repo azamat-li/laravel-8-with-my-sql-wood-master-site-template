@@ -27,7 +27,6 @@
             </div>
             <div id="page-hint"> <strong>Столярофф Цех</strong> - это индивидуальный подход и учёт желаний
                 каждого клиента.
-            <comment></comment>
             </div>
         </div>
     </div>
