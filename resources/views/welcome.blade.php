@@ -23,7 +23,7 @@
     <div id="page-wrapper">
         <div id="page" class="container">
             <div class="title">
-                <h2>Рады  <strong>#{{ $visits ?? 'не подсчитываемому пока' }}</strong> просмотру нашей мастерской.</h2>
+      <!--          <h2>Рады  <strong>#{{ $visits ?? 'не подсчитываемому пока' }}</strong> просмотру нашей мастерской.</h2> -->
             </div>
             <div id="page-hint"> <strong>Столярофф Цех</strong> - это индивидуальный подход и учёт желаний
                 каждого клиента.
