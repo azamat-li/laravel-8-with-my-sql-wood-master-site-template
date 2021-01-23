@@ -14,7 +14,7 @@ const mix = require('laravel-mix');
 
 
 
-require('laravel-mix-tailwind');
+require('mix-tailwindcss');
 
 mix
     .js(`resources/js/app.js`, 'public/js')

@@ -15,8 +15,6 @@
 <meta property="og:description" content="Индивидуальный подход и учёт пожеланий каждого клиента" />
 <meta name="twitter:title" content="Столярофф Цех">
 <meta name="twitter:description" content="Индивидуальный подход и учёт пожеланий каждого клиента">
-
-
 @endsection
 
 @extends ('layout')
