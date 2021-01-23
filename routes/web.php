@@ -22,7 +22,7 @@ Route::get('/', function () {
 #$visits = Redis::incr('visits');
 #return view('welcome')->withVisits($visits);
 
- return view('welcome');
+ return view('main');
 });
 
 Route::get('/about', function () {
