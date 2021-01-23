@@ -22,13 +22,6 @@ Released   : 20131025
     <link href="/css/tailwind.css" rel="stylesheet"/>
 
 
-    {{--    <script type="text/javascript" src="/js/jquery.min.js"></script>--}}
-    <!-- Before page is completely loaded script -->
-    <script>
-        $(document).ready(function () {
-            $('#loading').hide()
-        });
-    </script>
 </head>
 
 
