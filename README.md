@@ -1,4 +1,4 @@
-# Wood master profile template 
+# Craftman profile template 
 
 ## Features
 
