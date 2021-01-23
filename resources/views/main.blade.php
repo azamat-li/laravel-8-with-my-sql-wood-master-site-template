@@ -15,7 +15,6 @@
 @extends ('layout')
 
 @section('content')
-    <div id="page-wrapper">
         <div id="page" class="container">
             <div class="title">
             </div>
@@ -23,6 +22,4 @@
                 каждого клиента.
             </div>
         </div>
-    </div>
-    <div id="wrapper"></div>
 @endsection
