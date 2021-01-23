@@ -21,8 +21,6 @@ Released   : 20131025
     <link href="/css/vanilla.css" rel="stylesheet"/>
     <link href="/css/tailwind.css" rel="stylesheet"/>
 
-    <!--  jquery from CDN -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     {{--    <script type="text/javascript" src="/js/jquery.min.js"></script>--}}
     <!-- Before page is completely loaded script -->
@@ -36,6 +34,7 @@ Released   : 20131025
 
 
 <body>
+<template>
 <div id="header-wrapper" class="">
     <div id="header" class="pl-6 font-bold">
         <div id="logo" class="mr-4">
@@ -96,5 +95,6 @@ Released   : 20131025
     <div ></div>
     <div >Столярофф Цех | Based on design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</div>
 </div>
+</template>
 </body>
 <div id="loading" class="text-lg bg-gray-800 text-gray-200 rounded">Идет подготовка...</div>

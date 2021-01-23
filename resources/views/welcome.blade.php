@@ -16,6 +16,8 @@
 <meta name="twitter:title" content="Столярофф Цех">
 <meta name="twitter:description" content="Индивидуальный подход и учёт пожеланий каждого клиента">
 
+<script   src="https://code.jquery.com/jquery-3.5.1.js"   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="   crossorigin="anonymous"></script>
+
 
 
 @endsection
