@@ -10,11 +10,13 @@
 <meta
     content="ИП Столярофф Цех"
     name="author"/>
+<!--  
 <meta property="og:title" content="Столярофф Цех" />
 <meta property="og:site_name" content="Столярофф Цех" />
 <meta property="og:description" content="Индивидуальный подход и учёт пожеланий каждого клиента" />
 <meta name="twitter:title" content="Столярофф Цех"/>
 <meta name="twitter:description" content="Индивидуальный подход и учёт пожеланий каждого клиента"/>
+-->
 @endsection
 
 @extends ('layout')
