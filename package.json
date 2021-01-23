@@ -24,7 +24,6 @@
         "@j0nz/nifty-layouts": "^1.0.0",
         "@phased/phase": "^0.4.0",
         "dayjs": "^1.8.28",
-        "jquery": "^3.5.1",
         "laravel-mix-tailwind": "^0.1.1",
         "tailwindcss": "^1.4.6",
         "vue": "^2.6.11",
