@@ -1,8 +1,7 @@
-# Wood master profile template 
+# Craftman profile template 
 
 ## Features
 
-- Auth (coming soon, if the God withes)
 - Mail feedback
 - MySql integration
 - Address label number generating ( coming soon, if the God withes)
