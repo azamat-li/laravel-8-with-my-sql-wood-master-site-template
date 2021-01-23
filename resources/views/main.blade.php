@@ -15,7 +15,7 @@
 @extends ('layout')
 
 @section('content')
-        <div id="page" class="container">
+        <div id="page" >
             <div class="title">
             </div>
             <div id="page-hint"> <strong>Столярофф Цех</strong> - это индивидуальный подход и учёт желаний
