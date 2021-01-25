@@ -24,6 +24,7 @@
     "dependencies": {
         "@j0nz/nifty-layouts": "^1.0.0",
         "@phased/phase": "^0.4.0",
+        "@tailwindcss/typography": "^0.4.0",
         "dayjs": "^1.8.28",
         "laravel-mix-tailwind": "^0.1.1",
         "tailwindcss": "^1.4.6",

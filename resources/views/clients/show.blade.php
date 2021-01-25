@@ -28,7 +28,9 @@ Released   : 20131025
 @section('content')
     <div id="page-wrapper">{{ $client->name }}</div>
     <div id="wrapper">
-        <p> {{ $client->about}} </p>
+	<article class="prose lg:prose-xl">
+		 {{ $client->about}}
+	</article>
         <div>
             @foreach ($client->tags as $tag)
                 <a href="{{ route('clients.index', ['tag' => $tag->name ] ) }}"
