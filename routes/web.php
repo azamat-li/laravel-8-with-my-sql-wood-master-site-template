@@ -24,6 +24,12 @@ Route::get('/main', function () {
  return view('main');
 });
 
+Route::get('/', function () {
+#$visits = Redis::incr('visits');
+#return view('welcome')->withVisits($visits);
+ return view('main');
+});
+
 Route::get('/about', function () {
     return view('about');
 });
