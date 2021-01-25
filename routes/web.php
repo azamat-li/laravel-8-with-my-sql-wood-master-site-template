@@ -18,12 +18,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/main', function () {
-$visits = Redis::incr('visits');
-return view('main')->withVisits($visits);
- #return view('main');
-});
-
 
 Route::get('/about', function () {
     return view('about');
