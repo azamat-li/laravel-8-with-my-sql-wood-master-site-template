@@ -26,11 +26,11 @@ Released   : 20131025
     <div id="header" class="pl-6 font-bold">
         <div id="logo" class="mr-4">
             <div class=" bg-gray-800 flex rounded-full lg:w-96 lg:py-4  lg:p-8 p-4">
-                <h4  class="rounded-full flex lg:text-4xl text-2xl"><a href="/" >Столярофф Цех</a></h4>
+                <h4  class="rounded-full flex lg:text-4xl text-2xl"><a href="/main" >Столярофф Цех</a></h4>
             </div>
             <div id="menu" class="flex lg:rounded-full rounded-3xl flex-col bg-gray-800 py-1 h-full h-16 my-1 lg:flex-row items-center justify-center lg:justify-between w-full h-full ">
                 <ul class=" lg:flex  lg:items-center lg:content-center w-full text-center  lg:gap-x-7">
-                    <li class="{{Request::path() === '/' ? 'current_page_item' : ''}} "><a href="/"
+                    <li class="{{Request::path() === 'main' ? 'current_page_item' : ''}} "><a href="/main"
                                                                                           class="lg:items-center lg:justify-center  lg:flex lg:rounded-l-full lg:rounded-r-none lg:border-0
                                                                                            lg:ml-1  justify-center
                                                                                           border-l-4 border-r-4  border-gray-800
