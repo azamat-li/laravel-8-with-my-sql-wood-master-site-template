@@ -24,12 +24,6 @@ return view('main')->withVisits($visits);
  #return view('main');
 });
 
-Route::get('/', function () {
-$visits = Redis::incr('visits');
-#return view('welcome')->withVisits($visits);
-#return view('main');
-return $visits;
-});
 
 Route::get('/about', function () {
     return view('about');
@@ -62,3 +56,10 @@ Route::get('/clients/{client}', [ClientController::class, 'show'])->name('client
 
 Route::get('/clients/{client}/edit', [ClientController::class, 'edit']);
 Route::put('/clients/{client}', [ClientController::class, 'update']);
+
+
+Route::get('/', function () {
+$visits = Redis::incr('visits');
+return view('main')->withVisits($visits);
+#return $visits;
+});
