@@ -28,7 +28,7 @@ Released   : 20131025
 @section('content')
     <div id="page-wrapper">{{ $client->name }}</div>
     <div id="wrapper">
-	<article class="prose lg:prose-xl">
+	<article class="prose lg:prose-xl p-2 m-3 bg-indigo-200 rounded">
 		 {{ $client->about}}
 	</article>
         <div>
