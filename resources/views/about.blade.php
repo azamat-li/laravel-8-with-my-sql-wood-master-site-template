@@ -6,10 +6,10 @@
     content="о столярном цехе в Учалинском районе, о столярном цехе в Учалинском районе, о столярном цехе в селе Ахуново, о столярном цехе села Ахуново"
     name="keywords"/>
 <meta
-    content="О столярном цехе Столярофф Цех села Ахуново Учалинского района"
+    content="О столярном цехе {{ config('app.name') }} села Ахуново Учалинского района"
     name="description"/>
 <meta
-    content="ИП Столярофф Цех"
+    content="{{ config('app.name') }}"
     name="author"/>
 @endsection
 
@@ -21,7 +21,7 @@
 </div>
 <div id="page-hint" class="">
     Здесь можно найти общую информацию по предприятию
-    <strong>Столярофф Цех</strong>.
+    <strong>{{ config('app.name') }}</strong>.
 </div>
 <div id="wrapper">
     <div id="three-column" class="container"></div>

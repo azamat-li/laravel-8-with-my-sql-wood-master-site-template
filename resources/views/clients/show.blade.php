@@ -43,24 +43,21 @@ Released   : 20131025
         <div id="ctrl-buttons" class="ml-4">
             <button
                 class="border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-800 rounded px-4 py-2">
-                <a id="update" href="{{$client->id}}/edit" class="">Изменить</a></button>
+                <a id="update" href="{{$client->id}}/edit" class="">Изменить</a>
+						</button>
+
             <!--     Destroy client -->
             <form class="inline p-0 m-0" id="delete-form-{{$client->name}}"
                   action="{{ route('client.destroy', $client) }}"
                   method="POST">
-                @csrf @method('DELETE')
-                <button
-                    id="deleteClient"
-                    class="border border-red-500 text-red-500 hover:bg-red-500 hover:text-gray-200 rounded px-4 py-2"
-                    type="submit">Удалить клиента
-                </button>
+
+									@csrf @method('DELETE')
+									<button
+											id="deleteClient"
+											class="border border-red-500 text-red-500 hover:bg-red-500 hover:text-gray-200 rounded px-4 py-2"
+											type="submit">Удалить клиента</button>
             </form>
         </div>
     </div>
 @endsection
 </body>
-<style>
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-</style>

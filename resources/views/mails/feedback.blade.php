@@ -1,14 +1,14 @@
 @component('mail::message')
-## От Цеха Столярофф
+## От {{ config('app.name') }}
 
 Похоже, что вы интересовались темой
 
-Столярофф Цех, это:
+{{ config('app.name') }}, это:
 
 - Индивидуальный подход
 - Несинтетические материалы
 
-@component('mail::button', ['url' => 'https://ip-alibaev.vercel.app'])
+@component('mail::button', ['url' => 'https://{{ config(`app.name`) }}'])
 Посетить
 @endcomponent
 

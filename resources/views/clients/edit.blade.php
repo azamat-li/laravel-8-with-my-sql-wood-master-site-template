@@ -12,7 +12,7 @@ Released   : 20131025
 -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Править информацию о клиенте {{$client->name}}</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
@@ -45,6 +45,7 @@ Released   : 20131025
                         <input type="text" class="input @error('name') alert  is-danger @enderror"
                                name="name" id="name"
                                value="{{$client->name}}" required>
+
                         @error('name')
                         <p class="  is-danger alert"> {{ $errors->first('name') }} </p>
                         @enderror
@@ -53,8 +54,10 @@ Released   : 20131025
                     <div class="field">
                         <label class="label" for="about">Тёплые слова о клиенте</label>
                         <div class="control">
-                                <textarea class="textarea @error('about')  is-danger alert @enderror" name="about"
-                                          id="about" required>{{$client->about}}</textarea>
+														<textarea class="textarea @error('about')  is-danger alert @enderror" name="about"
+																			id="about" required>{{$client->about}}
+														</textarea>
+
                             @error('about')
                             <p class="help  is-danger alert"> {{ $errors->first('about') }} </p>
                             @enderror
@@ -63,12 +66,6 @@ Released   : 20131025
 
                     <div class="field is-grouped">
                         <div class="control">
-                            {{--                            {{ Form::open(array('url' => 'clients/' . $value->id, 'class' => 'pull-right')) }}--}}
-                            {{--                            {{ Form::hidden('_method', 'DELETE') }}--}}
-                            {{--                            {{ Form::submit('Delete this client', array('class' => 'border border-red-500 text-red-500--}}
-                            {{--                            hover:bg-red-500 hover:text-gray-200 rounded px-4 py-2')) }}--}}
-                            {{--                            {{ Form::close() }}--}}
-
                             <button type="submit"
                                     class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-gray-200 rounded px-4 py-2">
                                 Обновить информацию о клиенте

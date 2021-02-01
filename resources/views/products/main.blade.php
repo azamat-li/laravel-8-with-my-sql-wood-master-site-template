@@ -9,7 +9,7 @@
         content="Изделия из дерева, произведенные в столярном цехе села Ахуново Учалинского района"
         name="description"/>
     <meta
-        content="ИП Столярофф Цех"
+        content="{{ config('app.name') }}"
         name="author"/>
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
           rel="stylesheet"/>

@@ -9,7 +9,7 @@
         content="Обратная связь столярного цеха села Ахуново Учалинского района"
         name="description"/>
     <meta
-        content="ИП Столярофф Цех"
+        content="{{ config('app.name') }}"
         name="author"/>
 @endsection
 
@@ -19,7 +19,7 @@
     <div id="page-wrapper" class="text-gray-600 text-2xl ">Улучшить мастерскую.</div>
     <div id="page-hint" >
         Здесь можно заказать изделие либо что-то посоветовать мастерской
-        <strong>Столярофф Цех</strong>.
+        <strong>{{ config('app.name') }}</strong>.
     </div>
     <div id="wrapper">
         <div class="lg:px-4">

@@ -6,10 +6,10 @@
     content="контакты столярного цеха в Учалинском районе, контакты столярного цеха в Учалинском районе, контакты столярного цеха в селе Ахуново, контакты столярного цеха села Ахуново, телефон Ильдара Ильгамовича Алибаева, Ильдар Ильгамович Алибаев"
     name="keywords"/>
 <meta
-    content="Контакты Столярофф Цех - цеха села Ахуново Учалинского района"
+    content="Контакты  {{ config('app.name') }}- цеха села Ахуново Учалинского района"
     name="description"/>
 <meta
-    content="ИП Столярофф Цех"
+    content="{{ config('app.name') }}"
     name="author"/>
 @endsection
 
@@ -21,7 +21,7 @@
 </div>
 <div id="page-hint" >
     Для связи со
-    <strong> Столярофф Цех</strong> вы можете воспользоваться удобным для вас способом связи из указанных ниже.
+    <strong>  {{ config('app.name') }}</strong> вы можете воспользоваться удобным для вас способом связи из указанных ниже.
 </div>
 <div id="wrapper">
     <div id="feedback" class="lg:px-4" >
@@ -41,15 +41,15 @@
                             Электронная почта
                         </dt>
                         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 text-center ">
-                            ali.ildar1964@yandex.ru
+													TODO: add email
                         </dd>
                     </div>
                     <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                         <dt class="text-sm font-medium text-gray-500">
-                            Стационарный телефон
+													Рабочий телефон
                         </dt>
                         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                            +7 347 91 72 356
+													TODO: add work phone
                         </dd>
                     </div>
                     <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">

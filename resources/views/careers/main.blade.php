@@ -21,7 +21,7 @@
 @section('content')
 <div id="page-wrapper" class="text-gray-600 text-2xl ">Открытые вакансии.</div>
 <p id="page-hint" >Здесь можно узнать о возможностях трудоустройства в организации или сотрудничества со
-    <strong> Столярофф Цех</strong>.
+    <strong>{{ config('app.name') }}</strong>.
 </p>
 <div id="wrapper">
     <div  id="three-column">

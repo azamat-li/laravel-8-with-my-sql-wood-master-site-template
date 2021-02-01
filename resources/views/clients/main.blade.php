@@ -23,7 +23,7 @@
 </div>
 <div id="page-hint">
     Здесь представлены уже воспользовавшиеся услугами
-    <strong> Столярофф Цех ИП</strong>
+    <strong>{{ config('app.name') }}</strong>
     организации.
 </div>
 <div id="wrapper">
