@@ -18,10 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/main', function () {
-$visits = Redis::incr('visits');
-return view('main')->withVisits($visits);
- #return view('main');
+Route::get('/', function () {
+		$visits = Redis::incr('visits');
+		return view('index')->withVisits($visits);
 });
 
 Route::get('/about', function () {
@@ -57,8 +56,3 @@ Route::get('/clients/{client}/edit', [ClientController::class, 'edit']);
 Route::put('/clients/{client}', [ClientController::class, 'update']);
 
 
-Route::get('/', function () {
-$visits = Redis::incr('visits');
-return view('main')->withVisits($visits);
-#return $visits;
-});
