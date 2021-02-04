@@ -2,16 +2,13 @@
 
 ## Features
 
-- Mail feedback
-- MySql integration
-- Address label number generating ( coming soon, if the God withes)
+- Mail feedback with Mailtrap.io
+- MySql persisting
 
 ## Build With
 
 - Tailwindcss
 - Laravel
-- JQuery
-- Livewire 
 
 
 ## Contact author
