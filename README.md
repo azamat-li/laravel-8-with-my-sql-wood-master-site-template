@@ -1,4 +1,4 @@
-# Craftman profile template 
+# Portfolio template 
 
 ## Features
 
