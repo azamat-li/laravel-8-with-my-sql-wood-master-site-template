@@ -12,7 +12,6 @@
 
 
 ## Contact author
-
 |   email  | azamatalifullstack@gmail.com |   
 | ---- | ---- |
 
