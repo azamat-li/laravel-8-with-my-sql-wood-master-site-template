@@ -1,27 +1,24 @@
-# Craftman profile template 
+# Portfolio template 
 
 ## Features
 
-- Mail feedback
-- MySql integration
-- Address label number generating ( coming soon, if the God withes)
+- Mail feedback with Mailtrap.io
+- MySql persisting
 
 ## Build With
 
 - Tailwindcss
 - Laravel
-- JQuery
-- Livewire 
 
 
 ## Contact author
-|    |  |  
-| --- | --- 
 |   email  | azamatalifullstack@gmail.com |   
+| ---- | ---- |
+
 Fine Calculus Web Services
 
 
 
 ## License
 
-The license for template the [MIT license](https://opensource.org/licenses/MIT).
+The license for template is the [MIT license](https://opensource.org/licenses/MIT).
