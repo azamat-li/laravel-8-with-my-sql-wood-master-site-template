@@ -20,7 +20,6 @@ class CareerController extends Controller
         if (request('tag')) {
             $careers = Tag::where('name', request('tag'))->firstOrFail()->careers;
         } else {
-//            $careers = Career::latest()->get();
             $careers = Career::all();
         }
 

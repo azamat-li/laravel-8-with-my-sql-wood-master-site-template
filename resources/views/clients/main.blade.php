@@ -36,8 +36,7 @@
                          style="background-color: {{ $client->color}}"></div>
                     <p class="text-gray-500">{{$client->about}}</p>
                     <div class="pt-12 pb-5">
-                        <a href="{{ route('clients.show', $client->id) }}" class="button">О Клиенте {{
-                        $client->name }}</a>
+                        <a href="{{ route('clients.show', $client->id) }}" class="button">О Клиенте {{ $client->name }}</a>
                     </div>
                 </div>
 

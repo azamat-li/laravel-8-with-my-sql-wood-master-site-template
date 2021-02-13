@@ -23,13 +23,10 @@ Route::get('/', function () {
 		return view('index')->withVisits($visits);
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/cube-calc', function () { return view('cube-calc'); });
 
-Route::get('/contacts', function () {
-    return view('contacts');
-});
+Route::get('/about', function () { return view('about'); });
+Route::get('/contacts', function () { return view('contacts'); });
 
 Route::get('/feedback', [FeedbackController::class, 'main'])->name('feedback.main');
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
