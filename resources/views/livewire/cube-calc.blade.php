@@ -15,13 +15,22 @@
 							</label>
 					</div>
 			</div>
+      <div class="flex flex-col items-center justify-center">
+					<div class="flex flex-row">
+					@foreach (['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'] as $cnt)
+							<label class="inline-flex items-center mt-3">
+									<input type="radio" wire:model="count" id="count" name="count" value="{{$cnt}}" class="form-radio h-5 w-5 text-blue-600" checked><span class=" p-1 rounded text-gray-700">{{ $cnt }}</span>
+							</label>
+					@endforeach
+					</div>
+			</div>
 		</div>
 
 		<!--Text inputs-->
 		<div class="mt-2  flex flex-center items-center">
-			<input type="text" wire:model="length" alt="длина" placeholder="длина в метрах" class="rounded block">
-			<input type="text" wire:model="smWidthInMm" alt="ширина / диаметр в миллиметрах" placeholder="ширина / диаметр в мм" class="rounded  block">
-			@if ($shape === 'plane') <input type="text" wire:model="thickness" alt="толщина доски" placeholder="толщина доски в мм" class="rounded  block"> @endif
+			<input type="text" wire:model="length" alt="длина" placeholder="длина в метрах" class="rounded block  m-2">
+			<input type="text" wire:model="smWidthInMm" alt="ширина / диаметр в миллиметрах" placeholder="ширина / диаметр в мм" class="rounded  block  m-2">
+			@if ($shape === 'plane') <input type="text" wire:model="thickness" alt="толщина доски" placeholder="толщина доски в мм" class="rounded  block m-2"> @endif
 		</div>
 
 		<!--Launch button-->
@@ -41,7 +50,8 @@
 		<!--Calc answer-->
 		<div class="rounded p-2">
 			<p >Объём 
-				@if ($shape === 'plane') доски @elseif ($shape === 'circular') кругляка @endif
+				{{ $count }}
+				@if ($shape === 'plane')  досок  @elseif ($shape === 'circular') кругляков @else изделий @endif
 					 длиной {{ $length }} метров и
 				@if ($shape === 'plane') меньшей шириной @elseif ($shape === 'circular') меньшим диаметром @endif {{  $smWidthInMm }} миллиметров         
 			</p>

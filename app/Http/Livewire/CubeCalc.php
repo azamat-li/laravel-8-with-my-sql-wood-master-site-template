@@ -11,6 +11,7 @@ class CubeCalc extends Component
 		public  $smWidthInMm = null;
 		public  $thickness = null;
 		public  $volumeInCubicMeters = null;
+		public  $count = 1;
 
     public function render()
     {
@@ -26,9 +27,10 @@ class CubeCalc extends Component
 		public function  calculateCubeOfBoard() {
 			$smAreaInMm = $this->smWidthInMm * $this->thickness;
 			$smAreaInMeters = $smAreaInMm / 1000 / 1000;
-		  $volumeInCubicMeters = $smAreaInMeters * $this->length;
-			$this->volumeInCubicMeters = $volumeInCubicMeters; 
-				return $volumeInCubicMeters;
+		  $boardVolumeInCubicMeters = $smAreaInMeters * $this->length;
+			$totalVolumeInCubicMeters = $boardVolumeInCubicMeters * $this->count;
+			$this->volumeInCubicMeters = $totalVolumeInCubicMeters; 
+				return $totalVolumeInCubicMeters;
 		}	
 
 		public function  calculateCubeOfCircular() {
@@ -36,7 +38,8 @@ class CubeCalc extends Component
 			$smAreaInMm= pi() / 4 * $this->smWidthInMm * $this->smWidthInMm;
 			$smAreaInMeters = $smAreaInMm / 1000 / 1000;
 		  $volumeInCubicMeters = $smAreaInMeters * $this->length;
-			$this->volumeInCubicMeters = $volumeInCubicMeters; 
-				return $volumeInCubicMeters;
+		  $totalVolumeInCubicMeters = $volumeInCubicMeters * $this->count;
+			$this->volumeInCubicMeters = $totalVolumeInCubicMeters; 
+				return $totalVolumeInCubicMeters;
 		}	
 }
