@@ -3,14 +3,27 @@
 @section('head')
 <title>{{ config('app.name') }}</title>
 <meta
-    content="столярный цех в Учалинском районе, столярный цех в Учалинском районе, столярный цех в селе Ахуново, столярный цех села Ахуново, Ильдар Ильгамович Алибаев"
+    content="вычислить кубометр, кубометры, кубометров, кубометр дерева"
     name="keywords" />
 <meta
-    content=" {{ config('app.name') }} - цех села Ахуново Учалинского района"
+    content="Вычислитель кубометра"
     name="description" />
 <meta
-    content=""{{ config('app.name') }} 
+    content="{{ config('app.name') }}" 
     name="author" />
+
+<--!Open Graph-->
+<meta property="og:title" content="Вычислить кубометр деревянного материала" />
+<meta property="og:description" content="Кубометр по габаритам доски или кругляка" />
+<meta property="og:image" content="/images/calc-big.jpeg" />
+<meta property="og:type" content="website" />
+
+<--!Twitter card-->
+<meta property="twitter:title" content="Вычислить кубометр деревянного материала" />
+<meta property="twitter:description" content="Кубометр по габаритам доски или кругляка" />
+<meta property="twitter:image" content="/images/calc-big.jpeg" />
+<meta property="twitter:type" content="website" />
+
 @livewireStyles
 @endsection
 

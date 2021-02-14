@@ -11,6 +11,19 @@
 <meta
     content=""{{ config('app.name') }} 
     name="author" />
+
+<--!Open Graph-->
+<meta property="og:title" content=" {{ config('app.name') }} - цех по производству изделий из  дерева" />
+<meta property="og:description" content="Производство изделий по заказу" />
+<meta property="og:image" content="/images/index-big.jpeg" />
+<meta property="og:type" content="website" />
+
+<--!Twitter card-->
+<meta property="twitter:title" content=" {{ config('app.name') }} - цех по производству изделий из  дерева" />
+<meta property="twitter:description" content="Производство изделий по заказу" />
+<meta property="twitter:image" content="/images/index-big.jpeg" />
+<meta property="twitter:type" content="website" />
+
 @endsection
 
 @extends ('layout')
