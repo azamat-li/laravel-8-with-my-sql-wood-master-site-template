@@ -19,8 +19,17 @@ class CubeCalc extends Component
 
 		public function calculateCubes(String $shape)
 		{
-			return $this->calculateCubeOfCircular();
+			if ($shape === 'circular')  return $this->calculateCubeOfCircular();
+			if ($shape === 'plane')  return $this->calculateCubeOfBoard();
 		}
+
+		public function  calculateCubeOfBoard() {
+			$smAreaInMm = $this->smWidthInMm * $this->thickness;
+			$smAreaInMeters = $smAreaInMm / 1000 / 1000;
+		  $volumeInCubicMeters = $smAreaInMeters * $this->length;
+			$this->volumeInCubicMeters = $volumeInCubicMeters; 
+				return $volumeInCubicMeters;
+		}	
 
 		public function  calculateCubeOfCircular() {
 			//$smAreaInMm= pi() / 4 * pow($this->smWidthInMm, 2) ;

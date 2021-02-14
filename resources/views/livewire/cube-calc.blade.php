@@ -28,14 +28,19 @@
 		<div class="p-2 bg-gray-200 rounded mt-2">
 			@if ($shape === 'circular') 
 				<button wire:click="calculateCubes('circular')">
-					Посчитать кубы
+					Посчитать кубы для кругляка
 				</button>
-		 @endif
+			@endif
+			@if ($shape === 'plane') 
+				<button wire:click="calculateCubes('plane')">
+					Посчитать кубы для доски
+				</button>
+			@endif
 		</div>
 
 		<!--Calc answer-->
 		<div class="rounded p-2">
-			<p >Для 
+			<p >Объём 
 				@if ($shape === 'plane') доски @elseif ($shape === 'circular') кругляка @endif
 					 длиной {{ $length }} метров и
 				@if ($shape === 'plane') меньшей шириной @elseif ($shape === 'circular') меньшим диаметром @endif {{  $smWidthInMm }} миллиметров         
@@ -44,7 +49,7 @@
 				@if ($shape === 'plane') а также толщиной {{ $thickness }} миллиметров @endif
 			</p>
 			<p class="p-2 mt-1">
-					объём составляет <div class="text-2xl font-bold" >{{ $volumeInCubicMeters }}</div> кубометров.
+					составляет <div class="text-2xl font-bold" >{{ $volumeInCubicMeters }}</div> кубометров.
 			</p>
 		</div>
 </div>
