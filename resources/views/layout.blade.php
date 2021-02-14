@@ -14,11 +14,11 @@ Released   : 20131025
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700"
-          rel="stylesheet"/>
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700" rel="stylesheet"/>
     <link href="/css/fonts.css" rel="stylesheet"/>
     <link href="/css/vanilla.css" rel="stylesheet"/>
     <link href="/css/tailwind.css" rel="stylesheet"/>
+		@yield('head')
 </head>
 
 <body>
