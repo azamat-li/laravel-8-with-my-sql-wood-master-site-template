@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class CubeCalc extends Component
 {
-		public  $shape = null;
+		public  $shape = 'circular';
 		public  $length= null;
 		public  $smWidthInMm = null;
 		public  $thickness = null;
@@ -18,26 +18,37 @@ class CubeCalc extends Component
         return view('livewire.cube-calc');
     }
 
-		public function calculateCubes(String $shape)
+		public function hydrate() 
 		{
-			if ($shape === 'circular')  return $this->calculateCubeOfCircular();
-			if ($shape === 'plane')  return $this->calculateCubeOfBoard();
+			  $this->calculateCubes();
+		}
+
+		public function updated() 
+		{
+
+			  $this->calculateCubes();
+		}
+
+		public function calculateCubes()
+		{
+			if ($this->shape === 'circular')  return $this->calculateCubeOfCircular();
+			if ($this->shape === 'plane')  return $this->calculateCubeOfBoard();
 		}
 
 		public function  calculateCubeOfBoard() {
-			$smAreaInMm = $this->smWidthInMm * $this->thickness;
+			$smAreaInMm = (int)$this->smWidthInMm * (int)$this->thickness;
 			$smAreaInMeters = $smAreaInMm / 1000 / 1000;
-		  $boardVolumeInCubicMeters = $smAreaInMeters * $this->length;
+		  $boardVolumeInCubicMeters = $smAreaInMeters * (float)$this->length;
 			$totalVolumeInCubicMeters = $boardVolumeInCubicMeters * $this->count;
 			$this->volumeInCubicMeters = $totalVolumeInCubicMeters; 
 				return $totalVolumeInCubicMeters;
 		}	
 
 		public function  calculateCubeOfCircular() {
-			//$smAreaInMm= pi() / 4 * pow($this->smWidthInMm, 2) ;
-			$smAreaInMm= pi() / 4 * $this->smWidthInMm * $this->smWidthInMm;
+			$smAreaInMm= pi() / 4 * (int)$this->smWidthInMm * (int)$this->smWidthInMm;
+			$this->thickness = 0;
 			$smAreaInMeters = $smAreaInMm / 1000 / 1000;
-		  $volumeInCubicMeters = $smAreaInMeters * $this->length;
+		  $volumeInCubicMeters = $smAreaInMeters * (float)$this->length;
 		  $totalVolumeInCubicMeters = $volumeInCubicMeters * $this->count;
 			$this->volumeInCubicMeters = $totalVolumeInCubicMeters; 
 				return $totalVolumeInCubicMeters;

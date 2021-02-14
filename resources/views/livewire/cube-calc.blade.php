@@ -27,7 +27,7 @@
 		</div>
 
 		<!--Text inputs-->
-		<div class="mt-2  flex flex-center items-center">
+		<div class="mt-2  flex flex-center items-center justify-center">
 			<input type="text" wire:model="length" alt="длина" placeholder="длина в метрах" class="rounded block  m-2">
 			<input type="text" wire:model="smWidthInMm" alt="ширина / диаметр в миллиметрах" placeholder="ширина / диаметр в мм" class="rounded  block  m-2">
 			@if ($shape === 'plane') <input type="text" wire:model="thickness" alt="толщина доски" placeholder="толщина доски в мм" class="rounded  block m-2"> @endif
@@ -36,19 +36,19 @@
 		<!--Launch button-->
 		<div class="p-2 bg-gray-200 rounded mt-2">
 			@if ($shape === 'circular') 
-				<button wire:click="calculateCubes('circular')">
+				<button wire:click="calculateCubes()">
 					Посчитать кубы для кругляка
 				</button>
 			@endif
 			@if ($shape === 'plane') 
-				<button wire:click="calculateCubes('plane')">
+				<button wire:click="calculateCubes()">
 					Посчитать кубы для доски
 				</button>
 			@endif
 		</div>
 
 		<!--Calc answer-->
-		<div class="rounded p-2">
+		<div class="rounded p-2 ">
 			<p >Объём 
 				{{ $count }}
 				@if ($shape === 'plane')  досок  @elseif ($shape === 'circular') кругляков @else изделий @endif
