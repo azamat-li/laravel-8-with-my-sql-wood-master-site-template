@@ -64,10 +64,15 @@ Released   : 20131025
                                                                                                  title="Контакты">Контакты</a>
                     </li>
                     <li class="{{Request::path() === 'feedback' ? 'current_page_item lg:current_page_item_right' : ''}}"><a href="/feedback"
+                                                                                                 class=" current_page_item"
+                                                                                                 accesskey="8"
+                                                                                                 title="Связаться">Связаться</a>
+                    </li>
+										<li class="{{Request::path() === 'cube-calc' ? 'current_page_item lg:current_page_item_right' : ''}}"><a href="/cube-calc"
                                                                                                  class="current_page_item  lg:rounded-r-full lg:rounded-l-none lg:border-0
                                                                                                          border-l-4 border-r-4  border-gray-800   rounded-b-3xl  "
                                                                                                  accesskey="8"
-                                                                                                 title="Связаться">Связаться</a>
+                                                                                                 title="Вычислитель кубометров">Вычислитель кубометров</a>
                     </li>
                 </ul>
         </div>
