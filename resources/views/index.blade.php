@@ -24,11 +24,6 @@
 
 @section('content')
 	<div id="page" >
-		<div class="title">
-				<h2 class="p-2 m-3">рад  <strong>#{{ $visits ?? 'не подсчитываемому пока' }}</strong> просмотру мастерской.</h2>
-		</div>
-		<div id="page-hint"> <strong>{{ config('app.name') }}</strong> - это индивидуальный подход и учёт желаний
-				каждого клиента.
-		</div>
+		<div id="page-hint"> <strong>{{ config('app.name') }}</strong> </div>
 	</div>
 @endsection
