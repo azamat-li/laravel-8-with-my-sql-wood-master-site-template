@@ -39,6 +39,7 @@ Released   : 20131025
         </div>
 
         <div id="ctrl-buttons" class="ml-4">
+<!--
             <button
                 class="border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-800 rounded px-4 py-2">
                 <a id="update" href="{{$client->id}}/edit" class="">Изменить</a>
@@ -55,6 +56,7 @@ Released   : 20131025
 											class="border border-red-500 text-red-500 hover:bg-red-500 hover:text-gray-200 rounded px-4 py-2"
 											type="submit">Удалить клиента</button>
             </form>
+-->
         </div>
     </div>
 @endsection

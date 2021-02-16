@@ -15,15 +15,6 @@ use Illuminate\Routing\Redirector;
 class ClientController extends Controller
 {
 
-# REST
-# index
-# create
-# store
-# show
-# edit
-# destroy
-# update
-
     /**
      * To display a listing of the clients.
      * @return Application|Factory|View
@@ -41,17 +32,15 @@ class ClientController extends Controller
     /**
      * To show the form for creating a new client.
      * @return Application|Factory|View
-     */
     public function create()
     {
         return view('clients.create',['tags'=> Tag::all()]);
     }
-
+     */
 
     /**
      * To store newly created client.
      * @return Application|RedirectResponse|Redirector
-     */
     public function store()
     {
 
@@ -65,6 +54,7 @@ class ClientController extends Controller
 
         return redirect('/clients');
     }
+	 */
 
     /**
      * To display specified client.
@@ -79,17 +69,16 @@ class ClientController extends Controller
      * Show the form for editing the specified client.
      * @param Client $client
      * @return Application|Factory|View
-     */
     public function edit(Client $client)
     {
         return view('clients.edit', compact('client'));
     }
+	 */
 
     /**
      * To update specified client.
      * @param Client $client
      * @return Application|RedirectResponse|Redirector
-     */
     public function update(Client $client)
     {
         $this->validateClient();
@@ -101,19 +90,20 @@ class ClientController extends Controller
 
         return redirect('/clients/'.$client->id);
     }
+	 */
 
     /**
      * Remove the specified client from storage.
      * @param Client $client
      * @return Application|RedirectResponse|Redirector
      * @throws Exception
-     */
     public function destroy(Client $client)
     {
         $client->delete();
 
         return redirect('/clients');
     }
+	 */
 
     /**
      *

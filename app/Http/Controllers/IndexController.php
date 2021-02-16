@@ -13,8 +13,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-			$visits = Redis::incr('visits');
-			return view('welcome')->withVisits($visits);        
+			return view('welcome');
     }
 
 }
