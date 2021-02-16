@@ -82,8 +82,8 @@ Released   : 20131025
 
 @yield('content')
 
-<div  id="copyright" class=" lg:h-44 h-20 grid justify-items-center " >
+<div  id="copyright" class=" lg:h-44 h-20 lg:grid flex justify-center items-center justify-center " >
     <div ></div>
-    <div >{{ config('app.name') }} | Based on design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</div>
+    <div class="lg:text-lg text-sm">{{ config('app.name') }} | Based on design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</div>
 </div>
 </body>
