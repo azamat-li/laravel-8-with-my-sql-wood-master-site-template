@@ -4,13 +4,14 @@ use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\IndexController;
+
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-		$visits = Redis::incr('visits');
-		return view('index')->withVisits($visits);
-});
+Route::get('/', function () {});
+
+Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/cube-calc', function () { return view('cube-calc'); });
 

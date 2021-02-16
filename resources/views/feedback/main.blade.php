@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 @section('head')
-    <title >Система обратной связи столярного цеха села Ахуново Учалинского района</title>
-    <meta
-        content="Обратная связь столярного цеха села Ахуново Учалинского района"
-        name="description"/>
-    <meta
-        content="{{ config('app.name') }}"
-        name="author"/>
+	<title >Система обратной связи столярного цеха села Ахуново Учалинского района</title>
+	<meta
+			content="Обратная связь столярного цеха села Ахуново Учалинского района"
+			name="description"/>
+	<meta
+			content="{{ config('app.name') }}"
+			name="author"/>
 @endsection
 
 @extends ('layout')

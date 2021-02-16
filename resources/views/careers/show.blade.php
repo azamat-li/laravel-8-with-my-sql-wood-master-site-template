@@ -26,7 +26,6 @@ Released   : 20131025
 
 @section('content')
 <h2 >{{ $career->name }}</h2>
-
     <p> {{ $career->description}} </p>
     <p> {{ $career->field}} </p>
 </div>
