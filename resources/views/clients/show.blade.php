@@ -23,7 +23,6 @@ Released   : 20131025
 
 <body>
 @extends ('layout')
-
 @section('content')
     <div id="page-wrapper">{{ $client->name }}</div>
     <div id="wrapper">

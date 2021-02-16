@@ -6,7 +6,6 @@
 @endsection
 
 @extends ('layout')
-
 @section('content')
 <div class="bg-gray-100 py-16 pl-10 my-0">
     <a href="clients/create"

@@ -15,7 +15,6 @@
 @endsection
 
 @extends ('layout')
-
 @section('content')
     <div id="page-wrapper" class="text-gray-600 text-2xl ">Завершенные проекты</div>
     <p id="page-hint"> Здесь Вы можете ознакомиться с выполненными заказами

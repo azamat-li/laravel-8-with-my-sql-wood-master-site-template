@@ -24,7 +24,6 @@ Released   : 20131025
 
 <body>
 @extends ('layout')
-
 @section('content')
 <div id="page-wrapper">
     <h3>{{ $product->name }} </h3>
