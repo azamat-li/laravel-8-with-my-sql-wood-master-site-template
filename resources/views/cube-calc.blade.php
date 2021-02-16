@@ -2,9 +2,7 @@
 
 @section('head')
 <title>{{ config('app.name') }}</title>
-<meta
-    content="вычислить кубометр, кубометры, кубометров, кубометр дерева"
-    name="keywords" />
+
 <meta
     content="Вычислитель кубометра"
     name="description" />
