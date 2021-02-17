@@ -19,7 +19,7 @@ Route::get('/contacts', function () { return view('contacts'); });
 Route::get('/feedback', [FeedbackController::class, 'main'])->name('feedback.main');
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 
-Route::get('/careers', [CareerController::class, 'main'])->name('careers.main');
+Route::get('/careers', [CareerController::class, 'index'])->name('careers.main');
 Route::get('/careers/{career}', [CareerController::class, 'show'])->name('careers.show');
 
 Route::get('/products', [ProductController::class, 'main'])->name('products.main');
@@ -28,7 +28,7 @@ Route::get('/products/{product}/edit', [ProductController::class, 'edit']);
 Route::get('/products/{product}/edit', [ProductController::class, 'update']);
 
 
-Route::get('/clients', [ClientController::class, 'main'])->name('clients.main');
+Route::get('/clients', [ClientController::class, 'index'])->name('clients.main');
 
 #Route::post('/clients', [ClientController::class, 'store']);
 #Route::get('/clients/create', [ClientController::class, 'create']);

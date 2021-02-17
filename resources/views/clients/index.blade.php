@@ -7,7 +7,7 @@
 
 @extends ('layout')
 @section('content')
-<div id="page-wrapper" class="text-gray-600 text-2xl ">
+<div id="page-wrapper" class="text-gray-600 text-2xl" data-cy="desc">
     С кем мы сотрудничаем
 </div>
 <div id="page-hint">

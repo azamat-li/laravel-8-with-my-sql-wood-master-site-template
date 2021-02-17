@@ -24,6 +24,6 @@
 
 @section('content')
 	<div id="page" >
-		<div id="page-hint"> <strong>{{ config('app.name') }}</strong> </div>
+		<div id="page-hint"> <div data-cy="app-name" class="font-bold"><strong>{{ config('app.name') }}</strong></div> </div>
 	</div>
 @endsection
