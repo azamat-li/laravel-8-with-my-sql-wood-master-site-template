@@ -18,6 +18,5 @@ yarn-error.log
 *.pem
 npm-debug.log
 yarn-error.log
-
-
 vercelandnginxrelated.zip
+/cypress/integration/examples
